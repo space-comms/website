@@ -1,0 +1,329 @@
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Users, Target, Award, Rocket, Lightbulb, Globe } from 'lucide-react';
+
+const About = () => {
+  const values = [
+    {
+      icon: Lightbulb,
+      title: 'Innovation',
+      description: 'Pushing the boundaries of space communication technology with groundbreaking research and development.'
+    },
+    {
+      icon: Target,
+      title: 'Precision',
+      description: 'Delivering accurate, reliable solutions with meticulous attention to detail and quality.'
+    },
+    {
+      icon: Globe,
+      title: 'Global Impact',
+      description: 'Connecting communities worldwide through advanced satellite communication networks.'
+    },
+    {
+      icon: Award,
+      title: 'Excellence',
+      description: 'Maintaining the highest standards in everything we do, from design to deployment.'
+    }
+  ];
+
+  const team = [
+    {
+      name: 'Dr. Sarah Mitchell',
+      role: 'Chief Executive Officer',
+      bio: 'Former NASA engineer with 15+ years in space communications',
+      image: '/api/placeholder/300/300'
+    },
+    {
+      name: 'Prof. James Chen',
+      role: 'Chief Technology Officer',
+      bio: 'Leading expert in satellite technology and RF engineering',
+      image: '/api/placeholder/300/300'
+    },
+    {
+      name: 'Dr. Emily Rodriguez',
+      role: 'Head of Research',
+      bio: 'Pioneer in quantum communication and space-based networks',
+      image: '/api/placeholder/300/300'
+    },
+    {
+      name: 'Michael Thompson',
+      role: 'Operations Director',
+      bio: 'Veteran mission planner with expertise in satellite deployment',
+      image: '/api/placeholder/300/300'
+    }
+  ];
+
+  const milestones = [
+    {
+      year: '2018',
+      title: 'Company Founded',
+      description: 'Leeds Space Comms established with a vision to revolutionize space communications'
+    },
+    {
+      year: '2019',
+      title: 'First Prototype',
+      description: 'Successful development and testing of our first satellite communication system'
+    },
+    {
+      year: '2020',
+      title: 'Series A Funding',
+      description: '£15M raised to accelerate research and development initiatives'
+    },
+    {
+      year: '2021',
+      title: 'First Deployment',
+      description: 'Launch of our debut satellite constellation for European coverage'
+    },
+    {
+      year: '2022',
+      title: 'Global Expansion',
+      description: 'Extended operations to Asia-Pacific and North American markets'
+    },
+    {
+      year: '2023',
+      title: 'Innovation Award',
+      description: 'Recognized as UK Space Technology Company of the Year'
+    }
+  ];
+
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="pt-16"
+    >
+      {/* Hero Section */}
+      <section className="py-24 bg-gradient-to-br from-space-800 to-space-700">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.8 }}
+            className="text-center space-y-6"
+          >
+            <h1 className="text-4xl md:text-6xl font-display font-bold text-white">
+              About Leeds Space Comms
+            </h1>
+            <p className="text-xl md:text-2xl text-white/80 max-w-4xl mx-auto leading-relaxed">
+              We're on a mission to bridge the gap between Earth and space, 
+              creating the communication infrastructure for humanity's next chapter 
+              among the stars.
+            </p>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Mission & Vision */}
+      <section className="py-24 bg-space-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <motion.div
+              initial={{ x: -50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="space-y-8"
+            >
+              <div>
+                <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">
+                  Our Mission
+                </h2>
+                <p className="text-lg text-white/70 leading-relaxed">
+                  To democratize access to space communications by developing 
+                  innovative, reliable, and cost-effective satellite solutions 
+                  that connect every corner of our planet to the infinite 
+                  possibilities of space.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">
+                  Our Vision
+                </h2>
+                <p className="text-lg text-white/70 leading-relaxed">
+                  A future where seamless communication across Earth and beyond 
+                  enables unprecedented collaboration, discovery, and progress 
+                  for all of humanity.
+                </p>
+              </div>
+            </motion.div>
+
+            <motion.div
+              initial={{ x: 50, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+              className="relative"
+            >
+              <div className="aspect-square bg-gradient-to-br from-primary-500/20 to-space-600 rounded-2xl p-8 flex items-center justify-center">
+                <Rocket className="w-32 h-32 text-primary-400 animate-float" />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-500/10 to-transparent rounded-2xl" />
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Values */}
+      <section className="py-24 bg-space-800/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-center space-y-4 mb-16"
+          >
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-white">
+              Our Values
+            </h2>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto">
+              The principles that guide everything we do
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {values.map((value, index) => {
+              const IconComponent = value.icon;
+              return (
+                <motion.div
+                  key={value.title}
+                  initial={{ y: 50, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="group"
+                >
+                  <div className="glass-effect rounded-xl p-8 text-center card-hover h-full">
+                    <div className="w-16 h-16 bg-primary-500/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-500/30 transition-colors">
+                      <IconComponent className="w-8 h-8 text-primary-400" />
+                    </div>
+                    <h3 className="text-xl font-semibold text-white mb-4">
+                      {value.title}
+                    </h3>
+                    <p className="text-white/70 leading-relaxed">
+                      {value.description}
+                    </p>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline */}
+      <section className="py-24 bg-space-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-center space-y-4 mb-16"
+          >
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-white">
+              Our Journey
+            </h2>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto">
+              Key milestones in our mission to revolutionize space communications
+            </p>
+          </motion.div>
+
+          <div className="relative">
+            {/* Timeline line */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-primary-500 to-primary-300 rounded-full" />
+
+            <div className="space-y-16">
+              {milestones.map((milestone, index) => (
+                <motion.div
+                  key={milestone.year}
+                  initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.8, delay: index * 0.1 }}
+                  className={`flex items-center ${
+                    index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'
+                  }`}
+                >
+                  <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8'}`}>
+                    <div className="glass-effect rounded-xl p-6">
+                      <div className="text-primary-400 font-bold text-xl mb-2">
+                        {milestone.year}
+                      </div>
+                      <h3 className="text-white font-semibold text-lg mb-2">
+                        {milestone.title}
+                      </h3>
+                      <p className="text-white/70">
+                        {milestone.description}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Timeline node */}
+                  <div className="relative">
+                    <div className="w-4 h-4 bg-primary-500 rounded-full border-4 border-space-900" />
+                    <div className="absolute inset-0 w-4 h-4 bg-primary-500 rounded-full animate-ping opacity-75" />
+                  </div>
+
+                  <div className="w-1/2" />
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Team */}
+      <section className="py-24 bg-space-800/50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+            className="text-center space-y-4 mb-16"
+          >
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-white">
+              Meet Our Team
+            </h2>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto">
+              The brilliant minds driving innovation in space communications
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {team.map((member, index) => (
+              <motion.div
+                key={member.name}
+                initial={{ y: 50, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="group"
+              >
+                <div className="glass-effect rounded-xl p-6 text-center card-hover">
+                  <div className="w-24 h-24 bg-gradient-to-br from-primary-500/30 to-primary-600/30 rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <Users className="w-12 h-12 text-primary-400" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-white mb-1">
+                    {member.name}
+                  </h3>
+                  <div className="text-primary-400 font-medium mb-3">
+                    {member.role}
+                  </div>
+                  <p className="text-white/70 text-sm leading-relaxed">
+                    {member.bio}
+                  </p>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </motion.div>
+  );
+};
+
+export default About;

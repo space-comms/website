@@ -6,9 +6,9 @@ const News = () => {
   const newsArticles = [
     {
       id: 1,
-      title: 'Leeds Space Comms Wins UK Space Technology Award 2023',
+      title: 'RSGB Education-Affliated Club Recognition',
       excerpt: 'Recognition for our innovative satellite communication systems and contributions to the space industry.',
-      date: '2023-12-15',
+      date: '2025-4-15',
       readTime: '3 min read',
       category: 'Awards',
       icon: Award,
@@ -16,8 +16,8 @@ const News = () => {
     },
     {
       id: 2,
-      title: 'New Satellite Constellation Successfully Deployed',
-      excerpt: 'Our latest generation satellites are now operational, providing enhanced coverage across Europe.',
+      title: 'New Ground Station Successfully Deployed',
+      excerpt: 'Our latest generation ground station are now operational, providing enhanced coverage and tracking of satellites orbiting over Leeds.',
       date: '2023-11-28',
       readTime: '5 min read',
       category: 'Launch',
@@ -26,11 +26,11 @@ const News = () => {
     },
     {
       id: 3,
-      title: 'Partnership with European Space Agency Announced',
-      excerpt: 'Strategic collaboration to advance quantum communication technology for future space missions.',
-      date: '2023-11-10',
+      title: 'Presentation at Leeds Undergraduate Research Conference',
+      excerpt: 'Invited to present findings at our first conference involvement.',
+      date: '2025-06-10',
       readTime: '4 min read',
-      category: 'Partnership',
+      category: 'Publications',
       icon: Globe,
       featured: false
     }
@@ -47,7 +47,8 @@ const News = () => {
       'Launch': 'bg-green-500/20 text-green-400 border-green-400/30',
       'Partnership': 'bg-blue-500/20 text-blue-400 border-blue-400/30',
       'Technology': 'bg-purple-500/20 text-purple-400 border-purple-400/30',
-      'Business': 'bg-orange-500/20 text-orange-400 border-orange-400/30'
+      'Business': 'bg-orange-500/20 text-orange-400 border-orange-400/30',
+      'Publications': bg-orange-500/20 text-orange-400 border-orange-400/30,
     };
     return colors[category] || 'bg-gray-500/20 text-gray-400 border-gray-400/30';
   };

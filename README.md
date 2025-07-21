@@ -1,6 +1,44 @@
-# Leeds Space Comms Website
+# Leeds Space Comms — Student Society Website
 
-A modern, responsive website for Leeds Space Comms built with React, Vite, and Tailwind CSS. Inspired by SpaceX's design aesthetic with a focus on space communications technology.
+A modern, responsive website for Leeds Space Comms, a student-led satellite and space communications society at the University of Leeds. Built with React, Vite, and Tailwind CSS with a space-inspired design aesthetic.
+
+## 🛰️ About Leeds Space Comms
+
+Leeds Space Comms is a vibrant student society dedicated to satellite and space communications technology. We're a community of engineering, computing, and physics students passionate about:
+
+- **CubeSat Development** — Building and programming nano-satellites
+- **Radio Communications** — APRS, beacons, and experimental radio projects  
+- **Antenna Design** — Constructing and testing various antenna systems
+- **Space Tracking** — Monitoring satellites and space missions
+- **Educational Workshops** — Hands-on learning about space technology
+- **Outreach Events** — Inspiring the next generation of space enthusiasts
+
+**Open to all students** — Whether you're studying engineering, computer science, physics, or any field, if you're curious about space communications, you're welcome to join us!
+
+## 🚀 Mission Statement
+
+To foster student innovation in satellite and space communications through collaborative projects, educational workshops, and hands-on experience with cutting-edge space technology. We aim to bridge the gap between academic learning and real-world space industry applications while building a supportive community of space enthusiasts.
+
+## 🔧 Current Projects
+
+- **University CubeSat Initiative** — Contributing to satellite missions
+- **Ground Station Development** — Building antenna arrays for satellite tracking
+- **APRS Network Expansion** — Enhancing amateur radio packet networks
+- **Educational Beacon Project** — Teaching radio fundamentals through practice
+- **Space Weather Monitoring** — Real-time atmospheric and solar data collection
+
+## 👥 Get Involved
+
+**Interested in joining?** We welcome students from all backgrounds and experience levels:
+
+- **Weekly Meetings** — Thursdays at 6 PM in the Engineering Building
+- **Project Teams** — Join ongoing satellite and radio communication projects
+- **Workshops** — Learn soldering, programming, and RF design
+- **Competitions** — Participate in national and international space challenges
+- **Social Events** — Connect with like-minded space enthusiasts
+
+**Contact us:** [leedsspacecomms@leeds.ac.uk](mailto:leedsspacecomms@leeds.ac.uk)  
+**Follow us:** [@leedsspacecomms](https://instagram.com/leedsspacecomms) on Instagram and LinkedIn
 
 ## 🚀 Fixed Issues & Status
 
@@ -155,32 +193,85 @@ The built static files in the `dist` directory can be deployed to any static hos
 - AWS S3
 - Azure Static Web Apps
 
-## Contributing
+## 🚀 Contributing to Leeds Space Comms Website
 
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature-name`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin feature-name`
-5. Submit a pull request
+We welcome contributions from all society members and fellow students! Whether you're a beginner or experienced developer, there are ways to get involved:
 
-## License
+### For New Members
+- **Web Development Workshops** — Join our coding sessions to learn React, JavaScript, and web design
+- **Content Creation** — Help write about our projects, update news, and create educational content
+- **Design Input** — Contribute ideas for user interface improvements and accessibility
+- **Testing** — Help test the website on different devices and report issues
 
-This project is proprietary to Leeds Space Comms. All rights reserved.
+### For Experienced Developers
+- **Feature Development** — Build new sections for project showcases, member profiles, or interactive demos
+- **Performance Optimization** — Help improve loading times and user experience
+- **Mobile Enhancements** — Ensure the site works perfectly on all devices
+- **Accessibility Improvements** — Make the site more inclusive for all users
 
-## Contact
+### How to Contribute
+1. **Join the Society** — Attend our weekly meetings or contact us via email
+2. **Fork the Repository** — Create your own copy of the codebase
+3. **Create a Feature Branch** — `git checkout -b feature/your-idea`
+4. **Make Your Changes** — Follow our coding guidelines and add meaningful commits
+5. **Test Thoroughly** — Ensure your changes work across different browsers
+6. **Submit a Pull Request** — Describe your changes and their benefits
+7. **Code Review** — Collaborate with other members to refine your contribution
 
-For questions about this website, please contact:
-- Email: hello@leedsspacecomms.com
-- Instagram: [@leedsspacecomms](https://instagram.com/leedsspacecomms)
-- LinkedIn: [Leeds Space Comms](https://linkedin.com/company/leedsspacecomms)+ Vite
+### Project Ideas for Students
+- **Project Gallery** — Showcase current and past CubeSat and radio projects
+- **Learning Resources** — Interactive tutorials for satellite tracking and radio basics
+- **Event Calendar** — Integration with society meeting schedules and workshops
+- **Member Spotlight** — Profiles of active members and their contributions
+- **Real-time Data** — Live satellite tracking or space weather information
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📡 Technology Learning Path
 
-Currently, two official plugins are available:
+New to web development? Here's how society members can get started:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **HTML & CSS Basics** — Foundation of web development
+2. **JavaScript Fundamentals** — Programming logic and interactivity  
+3. **React Introduction** — Modern component-based development
+4. **Tailwind CSS** — Utility-first styling approach
+5. **Git & GitHub** — Version control and collaboration
+6. **Deployment** — Getting websites live on the internet
 
-## Expanding the ESLint configuration
+## 📋 Deployment & Hosting
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### GitHub Pages (Current Setup)
+- **Automatic Deployment** — Pushes to main branch trigger builds
+- **Custom Domain** — Configured for society's official web presence
+- **HTTPS Enabled** — Secure connections for all visitors
+
+### Local Development Environment
+```bash
+# Clone the repository
+git clone https://github.com/space-comms/website.git
+cd website
+
+# Install dependencies  
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+```
+
+## 📞 Contact & Get Involved
+
+**Leeds Space Comms Society**  
+University of Leeds, Leeds, UK
+
+- **Email:** [leedsspacecomms@leeds.ac.uk](mailto:leedsspacecomms@leeds.ac.uk)
+- **Instagram:** [@leedsspacecomms](https://instagram.com/leedsspacecomms)
+- **LinkedIn:** [@leedsspacecomms](https://linkedin.com/company/leedsspacecomms)
+- **GitHub:** [github.com/space-comms](https://github.com/space-comms)
+
+**Weekly Meetings:** Thursdays 6 PM, Engineering Building  
+**New Members Welcome** — No experience required, just enthusiasm for space!
+
+---
+
+*Built with ❤️ by Leeds Space Comms students — Reaching for the stars, one line of code at a time* 🛰️

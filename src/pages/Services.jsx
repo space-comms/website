@@ -21,7 +21,7 @@ const Services = () => {
               Our Services
             </h1>
             <p className="text-xl md:text-2xl text-white/80 max-w-4xl mx-auto leading-relaxed">
-              Comprehensive space communication solutions tailored to your needs
+              Take a look at what we can do for YOU.
             </p>
           </motion.div>
         </div>

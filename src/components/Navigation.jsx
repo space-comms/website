@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Rocket, Globe, Mail } from 'lucide-react';
+import { Menu, X, Satellite, Globe, Mail } from 'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,11 +20,11 @@ const Navigation = () => {
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
-    { name: 'Technologies', path: '/technologies' },
-    { name: 'Services', path: '/services' },
-    { name: 'Media', path: '/media' },
+    { name: 'Projects', path: '/technologies' },
+    { name: 'Activities', path: '/services' },
+    { name: 'Gallery', path: '/media' },
     { name: 'News', path: '/news' },
-    { name: 'Contact', path: '/contact' },
+    { name: 'Join Us', path: '/contact' },
   ];
 
   const socialLinks = [
@@ -35,7 +35,7 @@ const Navigation = () => {
     },
     { 
       name: 'LinkedIn',
-      url: 'https://linkedin.com/company/leedsspacecomms',
+      url: 'https://linkedin.com/leedsspacecomms',
       icon: Mail
     }
   ];
@@ -56,7 +56,7 @@ const Navigation = () => {
             className="flex items-center space-x-2"
           >
             <Link to="/" className="flex items-center space-x-2">
-              <Rocket className="w-8 h-8 text-primary-500" />
+              <Satellite className="w-8 h-8 text-primary-500" />
               <span className="font-display font-bold text-xl bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">
                 Leeds Space Comms
               </span>

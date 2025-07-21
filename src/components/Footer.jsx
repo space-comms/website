@@ -1,37 +1,37 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Rocket, Globe, Mail, MapPin, Phone, ExternalLink } from 'lucide-react';
+import { Satellite, Globe, Mail, MapPin, ExternalLink } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const footerSections = [
     {
-      title: 'Company',
+      title: 'Society',
       links: [
         { name: 'About Us', path: '/about' },
-        { name: 'Technologies', path: '/technologies' },
-        { name: 'Services', path: '/services' },
-        { name: 'News', path: '/news' },
+        { name: 'Projects', path: '/technologies' },
+        { name: 'Activities', path: '/services' },
+        { name: 'News & Events', path: '/news' },
       ]
     },
     {
-      title: 'Resources',
+      title: 'Get Involved',
       links: [
-        { name: 'Media Gallery', path: '/media' },
-        { name: 'Contact', path: '/contact' },
-        { name: 'Careers', path: '/careers' },
-        { name: 'Support', path: '/support' },
+        { name: 'Join Us', path: '/contact' },
+        { name: 'Student Projects', path: '/media' },
+        { name: 'Meetings & Events', path: '/contact' },
+        { name: 'Workshops', path: '/services' },
       ]
     },
     {
-      title: 'Legal',
+      title: 'Connect',
       links: [
-        { name: 'Privacy Policy', path: '/privacy' },
-        { name: 'Terms of Service', path: '/terms' },
-        { name: 'Cookie Policy', path: '/cookies' },
-        { name: 'GDPR', path: '/gdpr' },
+        { name: 'Contact Us', path: '/contact' },
+        { name: 'GitHub Projects', href: 'https://github.com/space-comms', external: true },
+        { name: 'University of Leeds', href: 'https://leeds.ac.uk', external: true },
+        { name: 'Student Societies', href: 'https://leedsuniversityunion.org.uk', external: true },
       ]
     }
   ];
@@ -39,19 +39,14 @@ const Footer = () => {
   const contactInfo = [
     {
       icon: Mail,
-      text: 'hello@leedsspacecomms.com',
-      href: 'mailto:hello@leedsspacecomms.com'
-    },
-    {
-      icon: Phone,
-      text: '+44 113 XXX XXXX',
-      href: 'tel:+44113XXXXXXX'
+      text: 'info@leedsspacecomms.co.uk',
+      href: 'mailto:info@leedsspacecomms.co.uk'
     },
     {
       icon: MapPin,
-      text: 'Leeds, United Kingdom',
-      href: null
-    }
+      text: 'University of Leeds, Leeds, UK',
+      href: 'https://maps.google.com/?q=University+of+Leeds'
+    },
   ];
 
   const socialLinks = [
@@ -82,7 +77,7 @@ const Footer = () => {
             >
               {/* Logo */}
               <div className="flex items-center space-x-2">
-                <Rocket className="w-8 h-8 text-primary-500" />
+                <Satellite className="w-8 h-8 text-primary-500" />
                 <span className="font-display font-bold text-xl bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">
                   Leeds Space Comms
                 </span>
@@ -90,9 +85,9 @@ const Footer = () => {
 
               {/* Mission Statement */}
               <p className="text-white/70 text-sm leading-relaxed max-w-md">
-                Pioneering the future of space communications with cutting-edge satellite 
-                technology and innovative solutions. Connecting Earth to the cosmos, 
-                one transmission at a time.
+                Student-led satellite and space communications society at the University of Leeds. 
+                Building CubeSats, experimenting with radio communications, and inspiring the next 
+                generation of space enthusiasts through hands-on learning and collaboration.
               </p>
 
               {/* Contact Info */}
@@ -153,12 +148,24 @@ const Footer = () => {
               <ul className="space-y-2">
                 {section.links.map((link) => (
                   <li key={link.name}>
-                    <Link
-                      to={link.path}
-                      className="text-white/60 hover:text-primary-400 transition-colors duration-200 text-sm"
-                    >
-                      {link.name}
-                    </Link>
+                    {link.external ? (
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-white/60 hover:text-primary-400 transition-colors duration-200 text-sm flex items-center space-x-1"
+                      >
+                        <span>{link.name}</span>
+                        <ExternalLink className="w-3 h-3" />
+                      </a>
+                    ) : (
+                      <Link
+                        to={link.path}
+                        className="text-white/60 hover:text-primary-400 transition-colors duration-200 text-sm"
+                      >
+                        {link.name}
+                      </Link>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -172,19 +179,33 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-white/60 text-sm">
-              © {currentYear} Leeds Space Comms. All rights reserved.
+              © {currentYear} Leeds Space Comms — Student Satellite & Space Communications Society
             </div>
             
             <div className="flex items-center space-x-6 text-sm text-white/60">
-              <Link to="/privacy" className="hover:text-primary-400 transition-colors">
-                Privacy
-              </Link>
-              <Link to="/terms" className="hover:text-primary-400 transition-colors">
-                Terms
-              </Link>
-              <Link to="/cookies" className="hover:text-primary-400 transition-colors">
-                Cookies
-              </Link>
+              <a 
+                href="https://github.com/space-comms" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-primary-400 transition-colors flex items-center space-x-1"
+              >
+                <span>GitHub</span>
+                <ExternalLink className="w-3 h-3" />
+              </a>
+              <a 
+                href="https://leeds.ac.uk" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-primary-400 transition-colors"
+              >
+                University of Leeds
+              </a>
+              <a 
+                href="mailto:leedsspacecomms@leeds.ac.uk"
+                className="hover:text-primary-400 transition-colors"
+              >
+                Contact
+              </a>
             </div>
           </div>
         </div>

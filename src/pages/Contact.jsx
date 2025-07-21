@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, Send, Globe, ExternalLink } from 'lucide-react';
+import { Mail, Phone, MapPin, Send, Globe, ExternalLink, Clock } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    company: '',
+    course: '',
     message: ''
   });
 
@@ -28,19 +28,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email Us',
-      content: 'hello@leedsspacecomms.com',
-      href: 'mailto:hello@leedsspacecomms.com'
-    },
-    {
-      icon: Phone,
-      title: 'Call Us',
-      content: '+44 113 XXX XXXX',
-      href: 'tel:+44113XXXXXXX'
+      content: 'info@leedsspacecomms.co.uk',
+      href: 'mailto:info@leedsspacecomms.co.uk'
     },
     {
       icon: MapPin,
-      title: 'Visit Us',
-      content: 'Leeds, United Kingdom',
+      title: 'Find Us',
+      content: 'Engineering Building, University of Leeds',
+      href: 'https://maps.google.com/?q=University+of+Leeds+Engineering+Building'
+    },
+    {
+      icon: Clock,
+      title: 'Weekly Meetings',
+      content: 'Wednesday 6 PM',
       href: null
     }
   ];
@@ -77,11 +77,11 @@ const Contact = () => {
             className="text-center space-y-6"
           >
             <h1 className="text-4xl md:text-6xl font-display font-bold text-white">
-              Get In Touch
+              Join Our Society
             </h1>
             <p className="text-xl md:text-2xl text-white/80 max-w-4xl mx-auto leading-relaxed">
-              Ready to launch your next mission? Let's discuss how we can help 
-              connect your project to the cosmos.
+              Interested in space communications? We welcome students from all disciplines 
+              to join our community of space enthusiasts at the University of Leeds.
             </p>
           </motion.div>
         </div>
@@ -101,10 +101,10 @@ const Contact = () => {
             >
               <div>
                 <h2 className="text-3xl font-display font-bold text-white mb-4">
-                  Send us a message
+                  Get Involved
                 </h2>
                 <p className="text-white/70">
-                  Fill out the form below and we'll get back to you within 24 hours.
+                  Tell us about yourself and your interest in space communications and RF. We'll get back to you with meeting details and project opportunities.
                 </p>
               </div>
 
@@ -143,23 +143,23 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="company" className="block text-sm font-medium text-white mb-2">
-                    Company / Organization
+                  <label htmlFor="course" className="block text-sm font-medium text-white mb-2">
+                    Course of Study
                   </label>
                   <input
                     type="text"
-                    id="company"
-                    name="company"
-                    value={formData.company}
+                    id="course"
+                    name="course"
+                    value={formData.course}
                     onChange={handleInputChange}
                     className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
-                    placeholder="Your Company"
+                    placeholder="e.g., Electronic Engineering, Computer Science, Physics"
                   />
                 </div>
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
-                    Message *
+                    Tell us about your interests *
                   </label>
                   <textarea
                     id="message"
@@ -169,7 +169,7 @@ const Contact = () => {
                     required
                     rows={6}
                     className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none"
-                    placeholder="Tell us about your project or inquiry..."
+                    placeholder="What interests you about space communications? Any previous experience with electronics, programming, or radio?"
                   />
                 </div>
 
@@ -180,7 +180,7 @@ const Contact = () => {
                   className="w-full bg-primary-600 hover:bg-primary-700 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 flex items-center justify-center space-x-2 glow-hover"
                 >
                   <Send className="w-5 h-5" />
-                  <span>Send Message</span>
+                  <span>Join Our Society</span>
                 </motion.button>
               </form>
             </motion.div>

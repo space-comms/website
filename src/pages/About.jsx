@@ -6,84 +6,84 @@ const About = () => {
   const values = [
     {
       icon: Lightbulb,
-      title: 'Innovation',
-      description: 'Pushing the boundaries of space communication technology with groundbreaking research and development.'
+      title: 'Learning',
+      description: 'Hands-on education through practical space communication projects and collaborative research.'
     },
     {
       icon: Target,
-      title: 'Precision',
-      description: 'Delivering accurate, reliable solutions with meticulous attention to detail and quality.'
+      title: 'Innovation',
+      description: 'Student-driven creativity in developing CubeSats, antennas, and radio communication systems.'
     },
     {
       icon: Globe,
-      title: 'Global Impact',
-      description: 'Connecting communities worldwide through advanced satellite communication networks.'
+      title: 'Community',
+      description: 'Building a supportive network of space enthusiasts across all university disciplines.'
     },
     {
       icon: Award,
       title: 'Excellence',
-      description: 'Maintaining the highest standards in everything we do, from design to deployment.'
+      description: 'Striving for high standards in our projects while fostering an inclusive learning environment.'
     }
   ];
 
   const team = [
     {
-      name: 'Dr. Sarah Mitchell',
-      role: 'Chief Executive Officer',
-      bio: 'Former NASA engineer with 15+ years in space communications',
+      name: 'Alex Chen',
+      role: 'Society President',
+      bio: 'Electronic Engineering student passionate about CubeSat development',
       image: '/api/placeholder/300/300'
     },
     {
-      name: 'Prof. James Chen',
-      role: 'Chief Technology Officer',
-      bio: 'Leading expert in satellite technology and RF engineering',
+      name: 'Emma Rodriguez',
+      role: 'Technical Director',
+      bio: 'Computer Science student specializing in satellite communication protocols',
       image: '/api/placeholder/300/300'
     },
     {
-      name: 'Dr. Emily Rodriguez',
-      role: 'Head of Research',
-      bio: 'Pioneer in quantum communication and space-based networks',
+      name: 'Jake Thompson',
+      role: 'Projects Coordinator',
+      bio: 'Physics student leading our ground station and antenna projects',
       image: '/api/placeholder/300/300'
     },
     {
-      name: 'Michael Thompson',
-      role: 'Operations Director',
-      bio: 'Veteran mission planner with expertise in satellite deployment',
+      name: 'Sarah Mitchell',
+      role: 'Outreach Manager',
+      bio: 'Aerospace Engineering student organizing workshops and community events',
       image: '/api/placeholder/300/300'
     }
   ];
 
   const milestones = [
     {
-      year: '2018',
-      title: 'Company Founded',
-      description: 'Leeds Space Comms established with a vision to revolutionize space communications'
+      year: 'Ealy April 2025',
+      title: 'Society Founded',
+      description: 'Leeds Space Comms established by passionate engineering students at the University of Leeds'
+    },
+        {
+      year: 'May 2025',
+      title: 'Ground Station Setup',
+      description: 'Built our first antenna array for satellite tracking and communication experiments'
     },
     {
-      year: '2019',
-      title: 'First Prototype',
-      description: 'Successful development and testing of our first satellite communication system'
+      year: 'June 2025',
+      title: 'First CubeSat Project',
+      description: 'The start of our first student-built nano-satellite development'
     },
     {
-      year: '2020',
-      title: 'Series A Funding',
-      description: '£15M raised to accelerate research and development initiatives'
+      year: 'June 2025',
+      title: 'RSGB Recognition',
+      description: 'Recogniesed by the Radio Society of Great Britain as a education-affliated society'
     },
     {
-      year: '2021',
-      title: 'First Deployment',
-      description: 'Launch of our debut satellite constellation for European coverage'
+      year: 'Late June 2025',
+      title: 'RSGB Recognition',
+      description: 'Recogniesed by the Radio Society of Great Britain as a education-affliated society'
     },
     {
-      year: '2022',
-      title: 'Global Expansion',
-      description: 'Extended operations to Asia-Pacific and North American markets'
+      year: 'July 2025',
+      title: 'APRS Network Launch',
+      description: 'Deployed our amateur radio packet network covering Yorkshire region'
     },
-    {
-      year: '2023',
-      title: 'Innovation Award',
-      description: 'Recognized as UK Space Technology Company of the Year'
-    }
   ];
 
   return (
@@ -106,8 +106,9 @@ const About = () => {
               About Leeds Space Comms
             </h1>
             <p className="text-xl md:text-2xl text-white/80 max-w-4xl mx-auto leading-relaxed">
-              We're on a mission to bridge the gap between Earth and space, 
-              creating the communication infrastructure for humanity's next chapter 
+              A vibrant student-led society at the University of Leeds, passionate about 
+              space communications, CubeSat development, and inspiring the next generation 
+              of space telecommunications and radio enthusiasts through hands-on learning and collaboration. 
               among the stars.
             </p>
           </motion.div>
@@ -130,10 +131,10 @@ const About = () => {
                   Our Mission
                 </h2>
                 <p className="text-lg text-white/70 leading-relaxed">
-                  To democratize access to space communications by developing 
-                  innovative, reliable, and cost-effective satellite solutions 
-                  that connect every corner of our planet to the infinite 
-                  possibilities of space.
+                  To foster student innovation in satellite and space communications 
+                  through hands-on projects, collaborative learning, and real-world 
+                  experience. We aim to bridge the gap between academic study and 
+                  industry practice while building a supportive community of space enthusiasts.
                 </p>
               </div>
 
@@ -142,9 +143,9 @@ const About = () => {
                   Our Vision
                 </h2>
                 <p className="text-lg text-white/70 leading-relaxed">
-                  A future where seamless communication across Earth and beyond 
-                  enables unprecedented collaboration, discovery, and progress 
-                  for all of humanity.
+                  To be the leading student society for space communications in the UK, 
+                  inspiring and preparing the next generation of engineers and scientists 
+                  to tackle the challenges of space exploration and satellite technology.
                 </p>
               </div>
             </motion.div>

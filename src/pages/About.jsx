@@ -28,27 +28,30 @@ const About = () => {
 
   const team = [
     {
-      name: 'Alex Chen',
+      name: 'William Weller',
       role: 'Society President',
-      bio: 'Electronic Engineering student passionate about CubeSat development',
+      bio: 'Electronic Engineering student passionate about all things RF',
+      Qualifications: 'Full Radio License'
       image: '/api/placeholder/300/300'
     },
     {
-      name: 'Emma Rodriguez',
-      role: 'Technical Director',
-      bio: 'Computer Science student specializing in satellite communication protocols',
+      name: 'Craig Barningham',
+      role: 'Technical Director & CubeSat GS Lead',
+      bio: 'Passionate in antenna design',
       image: '/api/placeholder/300/300'
     },
     {
-      name: 'Jake Thompson',
-      role: 'Projects Coordinator',
-      bio: 'Physics student leading our ground station and antenna projects',
+      name: 'Sean Ezeh',
+      role: 'General Secretary & CubeSat Comms Engineer',
+      bio: 'EEE student managing wider adminstration & licensed Radio Operator',
+      Qualifications: 'Foundation Radio License'
       image: '/api/placeholder/300/300'
     },
     {
-      name: 'Sarah Mitchell',
-      role: 'Outreach Manager',
-      bio: 'Aerospace Engineering student organizing workshops and community events',
+      name: 'Ahmad Al-Musbahi',
+      role: 'Project Lead',
+      bio: 'Engineering student with experience working in multiple student projects, CubeSat Technical Lead',
+      Qualifications: 'Full Radio License, L1 High Power Rocketry certification'
       image: '/api/placeholder/300/300'
     }
   ];

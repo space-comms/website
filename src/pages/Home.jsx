@@ -22,7 +22,7 @@ const Home = () => {
     {
       icon: Zap,
       title: 'Workshops',
-      description: 'Hands-on learning in RF design, programming, and space technology'
+      description: 'Hands-on learning in RF design, programming, and satellite communications technology'
     }
   ];
 
@@ -118,7 +118,7 @@ const Home = () => {
             {/* Main Headline */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-tight">
               <span className="bg-gradient-to-r from-white via-primary-300 to-primary-500 bg-clip-text text-transparent">
-                Leeds University Space Comms
+                Leeds University Space Communications
               </span>
               <br />
               <span className="text-white">Special Interest Group</span>
@@ -131,8 +131,8 @@ const Home = () => {
               transition={{ duration: 0.8, delay: 0.4 }}
               className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto leading-relaxed"
             >
-              Building the future of space comms and radio technology through student-led CubeSat projects, 
-              radio experiments, and hands-on learning. Join our community of space 
+              Building the future of satellite communications and RF technology through student-led CubeSat projects, 
+              radio experiments, and hands-on learning. Join our community of satellite communications 
               enthusiasts at the University of Leeds.
             </motion.p>
 
@@ -196,7 +196,7 @@ const Home = () => {
               What We Do
             </h2>
             <p className="text-xl text-white/70 max-w-3xl mx-auto">
-              Hands-on learning through exciting space communication projects 
+              Hands-on learning through exciting satellite communication projects 
               and collaborative student initiatives
             </p>
           </motion.div>
@@ -456,7 +456,7 @@ const Home = () => {
                   transition={{ duration: 2, repeat: Infinity, ease: "linear" }}
                 />
                 
-                <span className="relative z-10">Join Leeds Space Comms</span>
+                <span className="relative z-10">Join Leeds Space Communications</span>
                 <motion.div
                   animate={{ x: [0, 3, 0] }}
                   transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}

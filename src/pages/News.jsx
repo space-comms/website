@@ -6,7 +6,7 @@ const News = () => {
     {
       id: 1,
       title: 'RSGB Education-Affliated Club Recognition',
-      excerpt: 'Recognition for our innovative satellite communication systems and contributions to the space industry.',
+      excerpt: 'Recognition for our innovative satellite communication systems and contributions to the satellite communications industry.',
       date: '2025-6-1',
       readTime: '3 min read',
       category: 'Awards',

@@ -16,7 +16,7 @@ const About = () => {
     {
       icon: Globe,
       title: 'Community',
-      description: 'Building a supportive network of space enthusiasts across all university disciplines.'
+      description: 'Building a supportive network of space communications enthusiasts across all university disciplines.'
     },
     {
       icon: Award,
@@ -24,7 +24,7 @@ const About = () => {
       description: 'Striving for high standards in our projects while fostering an inclusive learning environment.'
     }
   ];
-/*
+
   const team = [
     {
       name: 'William Weller',
@@ -47,12 +47,12 @@ const About = () => {
       image: '/api/placeholder/300/300'
     },
   ];
-*/
+
   const milestones = [
     {
       year: 'Early April 2025',
       title: 'Society Founded',
-      description: 'Leeds Space Comms established by passionate engineering students at the University of Leeds'
+      description: 'Leeds Space Communications established by passionate engineering students at the University of Leeds'
     },
         {
       year: 'May 2025',
@@ -93,13 +93,13 @@ const About = () => {
             className="text-center space-y-6"
           >
             <h1 className="text-4xl md:text-6xl font-display font-bold text-white">
-              About Leeds Space Comms
+              About Leeds Space Communications
             </h1>
             <p className="text-xl md:text-2xl text-white/80 max-w-4xl mx-auto leading-relaxed">
               A vibrant student-led society at the University of Leeds, passionate about 
-              space communications, CubeSat development, and inspiring the next generation 
-              of space telecommunications and radio enthusiasts through hands-on learning and collaboration. 
-              among the stars.
+              satellite communications, RF engineering, and inspiring the next generation 
+              of telecommunications engineers through hands-on learning and collaboration 
+              in space communications technology.
             </p>
           </motion.div>
         </div>
@@ -124,7 +124,7 @@ const About = () => {
                   To foster student innovation in satellite and space communications 
                   through hands-on projects, collaborative learning, and real-world 
                   experience. We aim to bridge the gap between academic study and 
-                  industry practice while building a supportive community of space enthusiasts.
+                  industry practice while building a supportive community of space communications enthusiasts.
                 </p>
               </div>
 
@@ -135,7 +135,7 @@ const About = () => {
                 <p className="text-lg text-white/70 leading-relaxed">
                   To be the leading student society for space communications in the UK, 
                   inspiring and preparing the next generation of engineers and scientists 
-                  to tackle the challenges of space exploration and satellite technology.
+                  to tackle the challenges of satellite communications and RF technology.
                 </p>
               </div>
             </motion.div>
@@ -218,7 +218,7 @@ const About = () => {
               Our Journey
             </h2>
             <p className="text-xl text-white/70 max-w-3xl mx-auto">
-              Key milestones in our mission to revolutionize space communications
+              Key milestones in our mission to advance satellite communications and RF technology
             </p>
           </motion.div>
 
@@ -280,7 +280,7 @@ const About = () => {
               Meet Our Team
             </h2>
             <p className="text-xl text-white/70 max-w-3xl mx-auto">
-              The brilliant minds driving innovation in space communications
+              The brilliant minds driving innovation in satellite communications and RF engineering
             </p>
           </motion.div>
 

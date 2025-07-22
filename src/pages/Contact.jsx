@@ -56,7 +56,7 @@ const Contact = () => {
       name: 'LinkedIn',
       url: 'https://linkedin.com/company/leedsspacecomms',
       icon: ExternalLink,
-      handle: 'Leeds Space Comms'
+      handle: 'Leeds Space Communications'
     }
   ];
 
@@ -81,7 +81,7 @@ const Contact = () => {
             </h1>
             <p className="text-xl md:text-2xl text-white/80 max-w-4xl mx-auto leading-relaxed">
               Join our frequency and transmit your passion for space communications. 
-              Welcome to the Leeds Space Comms society - where every student becomes an operator.
+              Welcome to the Leeds Space Communications society - where every student becomes an operator.
             </p>
             
             {/* Radio Wave Animation */}
@@ -140,7 +140,7 @@ const Contact = () => {
                   ease: "easeInOut"
                 }}
               >
-                73 de LEEDS SPACE COMMS
+                73 de LEEDS SPACE COMMUNICATIONS
               </motion.div>
               
               <motion.div
@@ -301,7 +301,7 @@ const Contact = () => {
                     required
                     rows={6}
                     className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none"
-                    placeholder="Tell us about your interest in space communications, radio, satellites, or RF engineering. Any previous experience with electronics, programming, amateur radio, or space technology? What projects excite you most?"
+                    placeholder="Tell us about your interest in space communications, radio, satellites, or RF engineering. Any previous experience with electronics, programming, amateur radio, or satellite technology? What projects excite you most?"
                   />
                 </div>
 
@@ -376,7 +376,7 @@ const Contact = () => {
                   <span>Control Station</span>
                 </h2>
                 <p className="text-white/70">
-                  Your direct link to Leeds Space Comms HQ. Reach out using any of these channels.
+                  Your direct link to Leeds Space Communications HQ. Reach out using any of these channels.
                 </p>
               </div>
 
@@ -483,7 +483,7 @@ const Contact = () => {
               Operator Status Board
             </h2>
             <p className="text-white/70 max-w-2xl mx-auto">
-              Current operational status of Leeds Space Comms society activities
+              Current operational status of Leeds Space Communications society activities
             </p>
           </motion.div>
 
@@ -599,7 +599,7 @@ const Contact = () => {
                 animate={{ opacity: [0.7, 1, 0.7] }}
                 transition={{ duration: 2, repeat: Infinity }}
               >
-                73 DE G0LSC - LEEDS SPACE COMMS SOCIETY - QRT
+                73 DE G0LSC - LEEDS SPACE COMMUNICATIONS SOCIETY - QRT
               </motion.div>
             </div>
           </motion.div>

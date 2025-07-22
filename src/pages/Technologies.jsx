@@ -45,7 +45,7 @@ const Technologies = () => {
     },
     {
       icon: Zap,
-      title: 'Space Weather Monitor',
+      title: 'Space Weather Monitoring',
       description: 'IoT network for real-time ionospheric and space weather monitoring',
       features: ['Ionospheric sounding', 'Solar activity tracking', 'Magnetic field sensors', 'Data visualization', 'Research collaboration', 'Open data API'],
       status: 'Planning',

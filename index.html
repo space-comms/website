@@ -5,15 +5,47 @@
     <link rel="icon" type="image/svg+xml" href="/satellite-icon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Leeds Space Comms - Student-led satellite and space communications society at the University of Leeds. Building CubeSats, experimenting with radio communications, and inspiring the next generation of space enthusiasts." />
-    <meta name="keywords" content="space communications, satellite technology, CubeSat, student society, University of Leeds, radio communications, space enthusiasts" />
-    <meta property="og:title" content="Leeds Space Comms - Student Space Communications Society" />
-    <meta property="og:description" content="Student-led satellite and space communications society at the University of Leeds" />
+    <meta name="keywords" content="space communications, satellite technology, CubeSat, student society, University of Leeds, radio communications, space enthusiasts, amateur radio, RF engineering" />
+    <meta name="author" content="Leeds Space Comms Society" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="og:url" content="https://leedsspacecomms.co.uk/" />
+    <meta property="og:title" content="Leeds Space Comms - Student Space Communications Society" />
+    <meta property="og:description" content="Student-led satellite and space communications society at the University of Leeds. Building CubeSats, experimenting with radio communications, and inspiring the next generation of space enthusiasts." />
+    <meta property="og:image" content="https://leedsspacecomms.co.uk/satellite-icon.svg" />
+    <meta property="og:site_name" content="Leeds Space Comms" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://leedsspacecomms.co.uk/" />
+    <meta property="twitter:title" content="Leeds Space Comms - Student Space Communications Society" />
+    <meta property="twitter:description" content="Student-led satellite and space communications society at the University of Leeds" />
+    <meta property="twitter:image" content="https://leedsspacecomms.co.uk/satellite-icon.svg" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://leedsspacecomms.co.uk/" />
+    
+    <!-- DNS Prefetch for performance -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    
     <title>Leeds Space Comms - Student Space Communications Society</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- Client-side routing redirect handling -->
+    <script>
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
   </body>
 </html>

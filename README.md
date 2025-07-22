@@ -238,10 +238,46 @@ New to web development? Here's how society members can get started:
 
 ## 📋 Deployment & Hosting
 
-### GitHub Pages (Current Setup)
-- **Automatic Deployment** — Pushes to main branch trigger builds
-- **Custom Domain** — Configured for society's official web presence
-- **HTTPS Enabled** — Secure connections for all visitors
+## 🚀 Deployment & Hosting
+
+### GitHub Pages Deployment (Current Setup)
+The website is automatically deployed to [leedsspacecomms.co.uk](https://leedsspacecomms.co.uk) using GitHub Actions.
+
+#### Automatic Deployment Process:
+1. **Push to main branch** triggers the deployment workflow
+2. **Build Process**: 
+   - Install dependencies with `npm ci`
+   - Run ESLint for code quality checks
+   - Build production bundle with `npm run build`
+3. **Deploy**: Automatically deploy to GitHub Pages
+4. **Custom Domain**: Served at `leedsspacecomms.co.uk`
+
+#### Manual Deployment:
+```bash
+# Build the project locally
+npm run build
+
+# Preview the production build
+npm run preview
+```
+
+#### GitHub Pages Configuration:
+- **Source**: GitHub Actions
+- **Custom Domain**: `leedsspacecomms.co.uk`
+- **HTTPS**: Enabled automatically
+- **Build Tool**: Vite with React
+
+#### DNS Configuration Required:
+To serve the website at `leedsspacecomms.co.uk`, configure these DNS records:
+
+```
+Type    Name    Value
+CNAME   www     space-comms.github.io
+A       @       185.199.108.153
+A       @       185.199.109.153
+A       @       185.199.110.153
+A       @       185.199.111.153
+```
 
 ### Local Development Environment
 ```bash
@@ -257,7 +293,31 @@ npm run dev
 
 # Build for production
 npm run build
+
+# Preview production build
+npm run preview
 ```
+
+### Workflow Status
+[![Deploy to GitHub Pages](https://github.com/space-comms/website/actions/workflows/deploy.yml/badge.svg)](https://github.com/space-comms/website/actions/workflows/deploy.yml)
+
+### Production URLs
+- **Primary**: [leedsspacecomms.co.uk](https://leedsspacecomms.co.uk)
+- **GitHub Pages**: [space-comms.github.io/website](https://space-comms.github.io/website)
+
+## 🔧 Build Configuration
+
+### Vite Configuration
+- **Base Path**: `/` (root for custom domain)
+- **Output Directory**: `dist/`
+- **Source Maps**: Enabled for debugging
+- **Asset Directory**: `assets/`
+
+### Environment Files
+- **CNAME**: Custom domain configuration
+- **.nojekyll**: Disables Jekyll processing
+- **robots.txt**: SEO and crawler configuration
+- **404.html**: Custom 404 page with client-side routing support
 
 ## 📞 Contact & Get Involved
 

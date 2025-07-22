@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leeds Space Comms - Page Not Found</title>
+    <style>
+      body {
+        font-family: 'Inter', system-ui, sans-serif;
+        background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 100%);
+        color: white;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .container {
+        max-width: 600px;
+        padding: 2rem;
+      }
+      h1 {
+        font-size: 4rem;
+        margin-bottom: 1rem;
+        color: #0ea5e9;
+      }
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #ffffff;
+      }
+      p {
+        font-size: 1.1rem;
+        margin-bottom: 2rem;
+        color: rgba(255, 255, 255, 0.7);
+        line-height: 1.6;
+      }
+      .btn {
+        display: inline-block;
+        background: linear-gradient(45deg, #0ea5e9, #3b82f6);
+        color: white;
+        text-decoration: none;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: transform 0.2s;
+      }
+      .btn:hover {
+        transform: translateY(-2px);
+      }
+    </style>
+    <script>
+      // Redirect to home for client-side routing
+      sessionStorage.redirect = location.href;
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>404</h1>
+      <h2>Signal Lost</h2>
+      <p>
+        The page you're looking for seems to have drifted out of our communication range. 
+        Let's get you back to mission control.
+      </p>
+      <a href="/" class="btn">Return to Base Station</a>
+    </div>
+    <script>
+      // Handle client-side routing redirect
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect !== location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
+  </body>
+</html>

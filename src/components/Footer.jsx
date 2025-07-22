@@ -86,7 +86,7 @@ const Footer = () => {
               <p className="text-white/70 text-sm leading-relaxed max-w-md">
                 Student-led satellite and space communications society at the University of Leeds. 
                 Building CubeSats, experimenting with radio communications, and inspiring the next 
-                generation of space enthusiasts through hands-on learning and collaboration.
+                generation of telecommunication enthusiasts through hands-on learning and collaboration.
               </p>
 
               {/* Contact Info */}
@@ -178,7 +178,7 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             <div className="text-white/60 text-sm">
-              © {currentYear} Leeds Space Comms — Student Satellite & Space Communications Society
+              © {currentYear} Leeds Space Comms — Student Satellite & Space Communications Group
             </div>
             
             <div className="flex items-center space-x-6 text-sm text-white/60">

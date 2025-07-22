@@ -24,40 +24,33 @@ const About = () => {
       description: 'Striving for high standards in our projects while fostering an inclusive learning environment.'
     }
   ];
-
+/*
   const team = [
     {
       name: 'William Weller',
       role: 'Society Director',
       bio: 'Electronic Engineering student passionate about all things RF',
-      Qualifications: 'Full Radio License',
+      qualifications: 'Full Radio License',
       image: '/api/placeholder/300/300'
     },
     {
       name: 'Craig Barningham',
       role: 'Deputy Director & CubeSat GS Lead',
-      bio: 'Passionate in antenna design',
+      bio: 'Passionate about antenna design',
       image: '/api/placeholder/300/300'
     },
     {
       name: 'Sean Ezeh',
       role: 'General Secretary & CubeSat Comms Engineer',
-      bio: 'EEE student managing wider adminstration & licensed Radio Operator',
-      Qualifications: 'Foundation Radio License',
+      bio: 'EEE student managing wider administration & licensed Radio Operator',
+      qualifications: 'Foundation Radio License',
       image: '/api/placeholder/300/300'
     },
-    {
-      name: 'Ahmad Al-Musbahi',
-      role: 'Project Lead',
-      bio: 'Engineering student with experience working in multiple student projects, CubeSat Technical Lead',
-      Qualifications: 'Full Radio License, L1 High Power Rocketry certification',
-      image: '/api/placeholder/300/300'
-    }
   ];
-
+*/
   const milestones = [
     {
-      year: 'Ealy April 2025',
+      year: 'Early April 2025',
       title: 'Society Founded',
       description: 'Leeds Space Comms established by passionate engineering students at the University of Leeds'
     },
@@ -72,14 +65,9 @@ const About = () => {
       description: 'The start of our first student-built nano-satellite development'
     },
     {
-      year: 'June 2025',
-      title: 'RSGB Recognition',
-      description: 'Recogniesed by the Radio Society of Great Britain as a education-affliated society'
-    },
-    {
       year: 'Late June 2025',
       title: 'RSGB Recognition',
-      description: 'Recogniesed by the Radio Society of Great Britain as a education-affliated society'
+      description: 'Recognised by the Radio Society of Great Britain as an education-affiliated society'
     },
     {
       year: 'July 2025',

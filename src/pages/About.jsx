@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Users, Target, Award, Rocket, Lightbulb, Globe } from 'lucide-react';
 
@@ -29,14 +28,14 @@ const About = () => {
   const team = [
     {
       name: 'William Weller',
-      role: 'Society President',
+      role: 'Society Director',
       bio: 'Electronic Engineering student passionate about all things RF',
-      Qualifications: 'Full Radio License'
+      Qualifications: 'Full Radio License',
       image: '/api/placeholder/300/300'
     },
     {
       name: 'Craig Barningham',
-      role: 'Technical Director & CubeSat GS Lead',
+      role: 'Deputy Director & CubeSat GS Lead',
       bio: 'Passionate in antenna design',
       image: '/api/placeholder/300/300'
     },
@@ -44,14 +43,14 @@ const About = () => {
       name: 'Sean Ezeh',
       role: 'General Secretary & CubeSat Comms Engineer',
       bio: 'EEE student managing wider adminstration & licensed Radio Operator',
-      Qualifications: 'Foundation Radio License'
+      Qualifications: 'Foundation Radio License',
       image: '/api/placeholder/300/300'
     },
     {
       name: 'Ahmad Al-Musbahi',
       role: 'Project Lead',
       bio: 'Engineering student with experience working in multiple student projects, CubeSat Technical Lead',
-      Qualifications: 'Full Radio License, L1 High Power Rocketry certification'
+      Qualifications: 'Full Radio License, L1 High Power Rocketry certification',
       image: '/api/placeholder/300/300'
     }
   ];

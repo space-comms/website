@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Calendar, ArrowRight, Satellite, Award, Globe } from 'lucide-react';
 
@@ -8,7 +7,7 @@ const News = () => {
       id: 1,
       title: 'RSGB Education-Affliated Club Recognition',
       excerpt: 'Recognition for our innovative satellite communication systems and contributions to the space industry.',
-      date: '2025-4-15',
+      date: '2025-6-1',
       readTime: '3 min read',
       category: 'Awards',
       icon: Award,
@@ -18,7 +17,7 @@ const News = () => {
       id: 2,
       title: 'New Ground Station Successfully Deployed',
       excerpt: 'Our latest generation ground station are now operational, providing enhanced coverage and tracking of satellites orbiting over Leeds.',
-      date: '2023-11-28',
+      date: '2023-6-8',
       readTime: '5 min read',
       category: 'Launch',
       icon: Satellite,
@@ -28,7 +27,7 @@ const News = () => {
       id: 3,
       title: 'Presentation at Leeds Undergraduate Research Conference',
       excerpt: 'Invited to present findings at our first conference involvement.',
-      date: '2025-06-10',
+      date: '2025-06-18',
       readTime: '4 min read',
       category: 'Publications',
       icon: Globe,

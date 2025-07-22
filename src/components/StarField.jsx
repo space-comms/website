@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 
 const StarField = () => {
   const canvasRef = useRef(null);
@@ -74,7 +74,7 @@ const StarField = () => {
       });
 
       // Draw radio frequency spectrum visualization (bottom left corner)
-      spectrumBars.forEach((bar, index) => {
+      spectrumBars.forEach((bar) => {
         bar.phase += bar.frequency;
         const currentHeight = bar.height + Math.sin(bar.phase) * 15;
         

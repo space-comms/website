@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight, Satellite, Radio, Globe, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -439,8 +438,8 @@ const Home = () => {
               Ready to Join Our Mission?
             </h2>
             <p className="text-xl text-white/70 max-w-2xl mx-auto">
-              Whether you're studying engineering, physics, computer science, or just 
-              curious about radio and satellite technology, there's a place for you in our society.
+              Whether you&apos;re studying engineering, physics, computer science, or just 
+              curious about radio and satellite technology, there&apos;s a place for you in our society.
             </p>
             <motion.div
               whileHover={{ scale: 1.05 }}

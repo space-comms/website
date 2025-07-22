@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { Satellite, Radio, Cpu, Antenna, Shield, Zap, ExternalLink } from 'lucide-react';
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 
 const Services = () => {
@@ -34,7 +33,7 @@ const Services = () => {
               Services Page Coming Soon
             </h2>
             <p className="text-white/70">
-              We're working on detailed service offerings. Check back soon!
+              We&apos;re working on detailed service offerings. Check back soon!
             </p>
           </div>
         </div>

@@ -37,7 +37,7 @@ To foster student innovation in satellite and space communications through colla
 - **Competitions** — Participate in national and international space challenges
 - **Social Events** — Connect with like-minded space enthusiasts
 
-**Contact us:** [leedsspacecomms@leeds.ac.uk](mailto:leedsspacecomms@leeds.ac.uk)  
+**Contact us:** [leedsspacecomms@leeds.ac.uk](mailto:info@leedsspacecomms.co.uk)  
 **Follow us:** [@leedsspacecomms](https://instagram.com/leedsspacecomms) on Instagram and LinkedIn
 
 ## 🚀 Fixed Issues & Status
@@ -264,14 +264,14 @@ npm run build
 **Leeds Space Comms Society**  
 University of Leeds, Leeds, UK
 
-- **Email:** [leedsspacecomms@leeds.ac.uk](mailto:leedsspacecomms@leeds.ac.uk)
+- **Email:** [info@leedsspacecomms.com](mailto:leedsspacecomms@leeds.ac.uk)
 - **Instagram:** [@leedsspacecomms](https://instagram.com/leedsspacecomms)
 - **LinkedIn:** [@leedsspacecomms](https://linkedin.com/company/leedsspacecomms)
 - **GitHub:** [github.com/space-comms](https://github.com/space-comms)
 
-**Weekly Meetings:** Thursdays 6 PM, Engineering Building  
+**Weekly Meetings:** Wednesday's 6 PM, Engineering Building  
 **New Members Welcome** — No experience required, just enthusiasm for space!
 
 ---
 
-*Built with ❤️ by Leeds Space Comms students — Reaching for the stars, one line of code at a time* 🛰️
+*Built with ❤️ by Leeds Space Comms students — 76 de Al-Musbahi* 🛰️

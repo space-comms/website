@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Satellite, Globe, Mail, MapPin, ExternalLink } from 'lucide-react';
+import { Globe, Mail, MapPin, ExternalLink } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -76,7 +77,7 @@ const Footer = () => {
             >
               {/* Logo */}
               <div className="flex items-center space-x-2">
-                <Satellite className="w-8 h-8 text-primary-500" />
+                <img src={logo} alt="Leeds Space Comms Logo" className="w-8 h-8" />
                 <span className="font-display font-bold text-xl bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">
                   Leeds Space Comms
                 </span>

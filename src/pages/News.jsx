@@ -17,7 +17,7 @@ const News = () => {
       id: 2,
       title: 'New Ground Station Successfully Deployed',
       excerpt: 'Our latest generation ground station are now operational, providing enhanced coverage and tracking of satellites orbiting over Leeds.',
-      date: '2023-6-8',
+      date: '2025-7-27',
       readTime: '5 min read',
       category: 'Launch',
       icon: Satellite,

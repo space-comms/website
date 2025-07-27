@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Satellite, Globe, Mail } from 'lucide-react';
+import { Menu, X, Globe, Mail } from 'lucide-react';
+import logo from '../assets/logo.png';
+import ThemeToggle from './ThemeToggle';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -45,7 +47,7 @@ const Navigation = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'nav-blur border-b border-white/10' : 'bg-transparent'
+        scrolled ? 'nav-blur border-b border-white/10 dark:border-white/10' : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -56,7 +58,7 @@ const Navigation = () => {
             className="flex items-center space-x-2"
           >
             <Link to="/" className="flex items-center space-x-2">
-              <Satellite className="w-8 h-8 text-primary-500" />
+              <img src={logo} alt="Leeds Space Comms Logo" className="w-8 h-8" />
               <span className="font-display font-bold text-xl bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">
                 Leeds Space Comms
               </span>
@@ -86,7 +88,7 @@ const Navigation = () => {
             ))}
           </div>
 
-          {/* Social Links - Desktop */}
+          {/* Social Links & Theme Toggle - Desktop */}
           <div className="hidden md:flex items-center space-x-4">
             {socialLinks.map((social) => {
               const IconComponent = social.icon;
@@ -103,6 +105,7 @@ const Navigation = () => {
                 </motion.a>
               );
             })}
+            <ThemeToggle />
           </div>
 
           {/* Mobile menu button */}
@@ -148,23 +151,26 @@ const Navigation = () => {
                 </motion.div>
               ))}
               
-              {/* Mobile Social Links */}
-              <div className="flex items-center space-x-4 pt-4 border-t border-white/10">
-                {socialLinks.map((social) => {
-                  const IconComponent = social.icon;
-                  return (
-                    <motion.a
-                      key={social.name}
-                      href={social.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      whileHover={{ scale: 1.1 }}
-                      className="text-white/70 hover:text-primary-400 transition-colors duration-200"
-                    >
-                      <IconComponent className="w-5 h-5" />
-                    </motion.a>
-                  );
-                })}
+              {/* Mobile Social Links & Theme Toggle */}
+              <div className="flex items-center justify-between pt-4 border-t border-white/10">
+                <div className="flex items-center space-x-4">
+                  {socialLinks.map((social) => {
+                    const IconComponent = social.icon;
+                    return (
+                      <motion.a
+                        key={social.name}
+                        href={social.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.1 }}
+                        className="text-white/70 hover:text-primary-400 transition-colors duration-200"
+                      >
+                        <IconComponent className="w-5 h-5" />
+                      </motion.a>
+                    );
+                  })}
+                </div>
+                <ThemeToggle />
               </div>
             </div>
           </motion.div>

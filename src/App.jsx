@@ -1,6 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
+// Context
+import { ThemeProvider } from './contexts/ThemeContext';
+
 // Components
 import Navigation from './components/Navigation';
 import Footer from './components/Footer';
@@ -17,14 +20,15 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <Router>
-      <div className="min-h-screen bg-space-900 text-white relative overflow-hidden">
-        {/* Animated star field background */}
-        <StarField />
-        
-        {/* Navigation */}
-        <Navigation />
-        
+    <ThemeProvider>
+      <Router>
+        <div className="min-h-screen bg-white dark:bg-space-900 text-gray-900 dark:text-white relative overflow-hidden transition-colors duration-300">
+          {/* Animated star field background */}
+          <StarField />
+          
+          {/* Navigation */}
+          <Navigation />
+          
         {/* Main content with route transitions */}
         <AnimatePresence mode="wait">
           <Routes>
@@ -42,6 +46,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    </ThemeProvider>
   );
 }
 

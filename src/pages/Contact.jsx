@@ -68,7 +68,7 @@ const Contact = () => {
       className="pt-16"
     >
       {/* Hero Section */}
-      <section className="py-24 bg-gradient-to-br from-space-800 to-space-700">
+      <section className="py-24 bg-gradient-to-br from-blue-50 via-indigo-100 to-purple-200 dark:bg-gradient-to-br dark:from-space-800 dark:to-space-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
@@ -76,10 +76,10 @@ const Contact = () => {
             transition={{ duration: 0.8 }}
             className="text-center space-y-6"
           >
-            <h1 className="text-4xl md:text-6xl font-display font-bold text-white">
+            <h1 className="text-4xl md:text-6xl font-display font-bold text-gray-900 dark:text-white">
               Become an Operator
             </h1>
-            <p className="text-xl md:text-2xl text-white/80 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-700 dark:text-white/80 max-w-4xl mx-auto leading-relaxed">
               Join our frequency and transmit your passion for space communications. 
               Welcome to the Leeds Space Communications society - where every student becomes an operator.
             </p>
@@ -162,7 +162,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 bg-space-900">
+      <section className="py-24 bg-white dark:bg-space-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Contact Form */}
@@ -174,7 +174,7 @@ const Contact = () => {
               className="space-y-8"
             >
               <div>
-                <h2 className="text-3xl font-display font-bold text-white mb-4 flex items-center space-x-3">
+                <h2 className="text-3xl font-display font-bold text-gray-900 dark:text-white mb-4 flex items-center space-x-3">
                   <motion.div
                     animate={{ 
                       boxShadow: [
@@ -194,7 +194,7 @@ const Contact = () => {
                   </motion.div>
                   <span>Get Your Call Sign</span>
                 </h2>
-                <p className="text-white/70">
+                <p className="text-gray-700 dark:text-white/70">
                   Ready to join the frequency? Tell us about your interest in space communications and RF. 
                   We&apos;ll get back to you with meeting details, project opportunities, and your operator credentials.
                 </p>
@@ -237,7 +237,7 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
+                    <label htmlFor="name" className="block text-sm font-medium text-gray-800 dark:text-white mb-2">
                       Full Name *
                     </label>
                     <input
@@ -247,12 +247,12 @@ const Contact = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                      className="w-full px-4 py-3 bg-white/90 dark:bg-white/10 border border-gray-300 dark:border-white/20 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
                       placeholder="John Doe"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-white mb-2">
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-800 dark:text-white mb-2">
                       Email Address *
                     </label>
                     <input
@@ -262,14 +262,14 @@ const Contact = () => {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                      className="w-full px-4 py-3 bg-white/90 dark:bg-white/10 border border-gray-300 dark:border-white/20 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
                       placeholder="john@example.com"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="course" className="block text-sm font-medium text-white mb-2 flex items-center space-x-2">
+                  <label htmlFor="course" className="block text-sm font-medium text-gray-800 dark:text-white mb-2 flex items-center space-x-2">
                     <span>Course of Study</span>
                     <motion.div
                       animate={{ rotate: [0, 360] }}
@@ -284,13 +284,13 @@ const Contact = () => {
                     name="course"
                     value={formData.course}
                     onChange={handleInputChange}
-                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
+                    className="w-full px-4 py-3 bg-white/90 dark:bg-white/10 border border-gray-300 dark:border-white/20 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all"
                     placeholder="e.g., Electronic Engineering, Computer Science, Physics"
                   />
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-white mb-2">
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-800 dark:text-white mb-2">
                     Your Radio Background & Interests *
                   </label>
                   <textarea
@@ -300,7 +300,7 @@ const Contact = () => {
                     onChange={handleInputChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none"
+                    className="w-full px-4 py-3 bg-white/90 dark:bg-white/10 border border-gray-300 dark:border-white/20 rounded-lg text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none"
                     placeholder="Tell us about your interest in space communications, radio, satellites, or RF engineering. Any previous experience with electronics, programming, amateur radio, or satellite technology? What projects excite you most?"
                   />
                 </div>
@@ -359,7 +359,7 @@ const Contact = () => {
               className="space-y-8"
             >
               <div>
-                <h2 className="text-3xl font-display font-bold text-white mb-4 flex items-center space-x-3">
+                <h2 className="text-3xl font-display font-bold text-gray-900 dark:text-white mb-4 flex items-center space-x-3">
                   <motion.div
                     animate={{ 
                       rotate: [0, 10, 0, -10, 0],
@@ -375,7 +375,7 @@ const Contact = () => {
                   </motion.div>
                   <span>Control Station</span>
                 </h2>
-                <p className="text-white/70">
+                <p className="text-gray-700 dark:text-white/70">
                   Your direct link to Leeds Space Communications HQ. Reach out using any of these channels.
                 </p>
               </div>
@@ -397,10 +397,10 @@ const Contact = () => {
                           <IconComponent className="w-6 h-6 text-primary-400" />
                         </div>
                         <div>
-                          <h3 className="text-white font-semibold mb-1">
+                          <h3 className="text-gray-900 dark:text-white font-semibold mb-1">
                             {item.title}
                           </h3>
-                          <p className="text-white/70">
+                          <p className="text-gray-700 dark:text-white/70">
                             {item.content}
                           </p>
                         </div>
@@ -422,7 +422,7 @@ const Contact = () => {
 
               {/* Social Media */}
               <div className="glass-effect rounded-xl p-6">
-                <h3 className="text-white font-semibold mb-4">
+                <h3 className="text-gray-900 dark:text-white font-semibold mb-4">
                   Follow Us
                 </h3>
                 <div className="space-y-4">
@@ -435,14 +435,14 @@ const Contact = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         whileHover={{ scale: 1.02 }}
-                        className="flex items-center space-x-4 p-4 bg-white/5 rounded-lg hover:bg-white/10 transition-colors"
+                        className="flex items-center space-x-4 p-4 bg-gray-100 dark:bg-white/5 rounded-lg hover:bg-gray-200 dark:hover:bg-white/10 transition-colors"
                       >
-                        <IconComponent className="w-6 h-6 text-primary-400" />
+                        <IconComponent className="w-6 h-6 text-primary-600 dark:text-primary-400" />
                         <div>
-                          <div className="text-white font-medium">
+                          <div className="text-gray-900 dark:text-white font-medium">
                             {social.name}
                           </div>
-                          <div className="text-white/60 text-sm">
+                          <div className="text-gray-700 dark:text-white/60 text-sm">
                             {social.handle}
                           </div>
                         </div>
@@ -454,12 +454,12 @@ const Contact = () => {
 
               {/* Map Placeholder */}
               <div className="glass-effect rounded-xl p-6">
-                <h3 className="text-white font-semibold mb-4">
+                <h3 className="text-gray-900 dark:text-white font-semibold mb-4">
                   Our Location
                 </h3>
-                <div className="aspect-video bg-gradient-to-br from-primary-500/20 to-space-600 rounded-lg flex items-center justify-center">
-                  <div className="text-center text-white/70">
-                    <MapPin className="w-12 h-12 mx-auto mb-2 text-primary-400" />
+                <div className="aspect-video bg-gradient-to-br from-blue-100 to-indigo-200 dark:bg-gradient-to-br dark:from-primary-500/20 dark:to-space-600 rounded-lg flex items-center justify-center">
+                  <div className="text-center text-gray-700 dark:text-white/70">
+                    <MapPin className="w-12 h-12 mx-auto mb-2 text-primary-600 dark:text-primary-400" />
                     <p>Interactive map coming soon</p>
                     <p className="text-sm">Leeds, United Kingdom</p>
                   </div>
@@ -471,7 +471,7 @@ const Contact = () => {
       </section>
 
       {/* Operator Status Board */}
-      <section className="py-16 bg-gradient-to-br from-space-800 to-space-900">
+      <section className="py-16 bg-gray-100 dark:bg-gradient-to-br dark:from-space-800 dark:to-space-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -497,7 +497,7 @@ const Contact = () => {
               className="glass-effect rounded-xl p-6"
             >
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-white font-semibold">Active Operators</h3>
+                <h3 className="text-gray-900 dark:text-white font-semibold">Active Operators</h3>
                 <motion.div
                   animate={{ 
                     scale: [1, 1.2, 1],
@@ -520,7 +520,7 @@ const Contact = () => {
               className="glass-effect rounded-xl p-6"
             >
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-white font-semibold">Projects QRV</h3>
+                <h3 className="text-gray-900 dark:text-white font-semibold">Projects QRV</h3>
                 <motion.div
                   animate={{ rotate: [0, 360] }}
                   transition={{ duration: 3, repeat: Infinity, ease: "linear" }}

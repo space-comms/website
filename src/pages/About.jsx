@@ -84,7 +84,7 @@ const About = () => {
       className="pt-16"
     >
       {/* Hero Section */}
-      <section className="py-24 bg-gradient-to-br from-space-800 to-space-700">
+      <section className="py-24 bg-gradient-to-br from-blue-50 via-indigo-100 to-purple-200 dark:bg-gradient-to-br dark:from-space-800 dark:to-space-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
@@ -92,10 +92,10 @@ const About = () => {
             transition={{ duration: 0.8 }}
             className="text-center space-y-6"
           >
-            <h1 className="text-4xl md:text-6xl font-display font-bold text-white">
+            <h1 className="text-4xl md:text-6xl font-display font-bold text-gray-900 dark:text-white">
               About Leeds Space Communications
             </h1>
-            <p className="text-xl md:text-2xl text-white/80 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-700 dark:text-white/80 max-w-4xl mx-auto leading-relaxed">
               A vibrant student-led society at the University of Leeds, passionate about 
               satellite communications, RF engineering, and inspiring the next generation 
               of telecommunications engineers through hands-on learning and collaboration 
@@ -106,7 +106,7 @@ const About = () => {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-24 bg-space-900">
+      <section className="py-24 bg-gray-50 dark:bg-space-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <motion.div
@@ -117,10 +117,10 @@ const About = () => {
               className="space-y-8"
             >
               <div>
-                <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">
+                <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-6">
                   Our Mission
                 </h2>
-                <p className="text-lg text-white/70 leading-relaxed">
+                <p className="text-lg text-gray-600 dark:text-white/70 leading-relaxed">
                   To foster student innovation in satellite and space communications 
                   through hands-on projects, collaborative learning, and real-world 
                   experience. We aim to bridge the gap between academic study and 
@@ -129,10 +129,10 @@ const About = () => {
               </div>
 
               <div>
-                <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">
+                <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 dark:text-white mb-6">
                   Our Vision
                 </h2>
-                <p className="text-lg text-white/70 leading-relaxed">
+                <p className="text-lg text-gray-600 dark:text-white/70 leading-relaxed">
                   To be the leading student society for space communications in the UK, 
                   inspiring and preparing the next generation of engineers and scientists 
                   to tackle the challenges of satellite communications and RF technology.
@@ -157,7 +157,7 @@ const About = () => {
       </section>
 
       {/* Values */}
-      <section className="py-24 bg-space-800/50">
+      <section className="py-24 bg-gray-50 dark:bg-space-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
@@ -166,10 +166,10 @@ const About = () => {
             transition={{ duration: 0.8 }}
             className="text-center space-y-4 mb-16"
           >
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-white">
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-gray-900 dark:text-white">
               Our Values
             </h2>
-            <p className="text-xl text-white/70 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 dark:text-white/70 max-w-3xl mx-auto">
               The principles that guide everything we do
             </p>
           </motion.div>
@@ -190,10 +190,10 @@ const About = () => {
                     <div className="w-16 h-16 bg-primary-500/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-500/30 transition-colors">
                       <IconComponent className="w-8 h-8 text-primary-400" />
                     </div>
-                    <h3 className="text-xl font-semibold text-white mb-4">
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
                       {value.title}
                     </h3>
-                    <p className="text-white/70 leading-relaxed">
+                    <p className="text-gray-700 dark:text-white/70 leading-relaxed">
                       {value.description}
                     </p>
                   </div>
@@ -205,7 +205,7 @@ const About = () => {
       </section>
 
       {/* Timeline */}
-      <section className="py-24 bg-space-900">
+      <section className="py-24 bg-white dark:bg-space-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
@@ -214,10 +214,10 @@ const About = () => {
             transition={{ duration: 0.8 }}
             className="text-center space-y-4 mb-16"
           >
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-white">
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-gray-900 dark:text-white">
               Our Journey
             </h2>
-            <p className="text-xl text-white/70 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 dark:text-white/70 max-w-3xl mx-auto">
               Key milestones in our mission to advance satellite communications and RF technology
             </p>
           </motion.div>
@@ -243,10 +243,10 @@ const About = () => {
                       <div className="text-primary-400 font-bold text-xl mb-2">
                         {milestone.year}
                       </div>
-                      <h3 className="text-white font-semibold text-lg mb-2">
+                      <h3 className="text-gray-900 dark:text-white font-semibold text-lg mb-2">
                         {milestone.title}
                       </h3>
-                      <p className="text-white/70">
+                      <p className="text-gray-700 dark:text-white/70">
                         {milestone.description}
                       </p>
                     </div>
@@ -267,7 +267,7 @@ const About = () => {
       </section>
 
       {/* Team */}
-      <section className="py-24 bg-space-800/50">
+      <section className="py-24 bg-gray-50 dark:bg-space-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
@@ -276,10 +276,10 @@ const About = () => {
             transition={{ duration: 0.8 }}
             className="text-center space-y-4 mb-16"
           >
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-white">
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-gray-900 dark:text-white">
               Meet Our Team
             </h2>
-            <p className="text-xl text-white/70 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-700 dark:text-white/70 max-w-3xl mx-auto">
               The brilliant minds driving innovation in satellite communications and RF engineering
             </p>
           </motion.div>
@@ -298,13 +298,13 @@ const About = () => {
                   <div className="w-24 h-24 bg-gradient-to-br from-primary-500/30 to-primary-600/30 rounded-full mx-auto mb-4 flex items-center justify-center">
                     <Users className="w-12 h-12 text-primary-400" />
                   </div>
-                  <h3 className="text-xl font-semibold text-white mb-1">
+                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-1">
                     {member.name}
                   </h3>
-                  <div className="text-primary-400 font-medium mb-3">
+                  <div className="text-primary-600 dark:text-primary-400 font-medium mb-3">
                     {member.role}
                   </div>
-                  <p className="text-white/70 text-sm leading-relaxed">
+                  <p className="text-gray-700 dark:text-white/70 text-sm leading-relaxed">
                     {member.bio}
                   </p>
                 </div>

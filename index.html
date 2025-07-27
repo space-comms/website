@@ -32,6 +32,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     
     <title>Leeds Space Comms - Student Space Communications Society</title>
+    
+    <!-- Theme initialization script to prevent FOUC -->
+    <script>
+      (function() {
+        const savedTheme = localStorage.getItem('theme');
+        const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        const theme = savedTheme || systemTheme;
+        
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark');
+        }
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

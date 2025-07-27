@@ -58,7 +58,7 @@ const News = () => {
       exit={{ opacity: 0 }}
       className="pt-16"
     >
-      <section className="py-24 bg-gradient-to-br from-space-800 to-space-700">
+      <section className="py-24 bg-gradient-to-br from-blue-50 via-indigo-100 to-purple-200 dark:bg-gradient-to-br dark:from-space-800 dark:to-space-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
@@ -66,17 +66,17 @@ const News = () => {
             transition={{ duration: 0.8 }}
             className="text-center space-y-6"
           >
-            <h1 className="text-4xl md:text-6xl font-display font-bold text-white">
+            <h1 className="text-4xl md:text-6xl font-display font-bold text-gray-900 dark:text-white">
               Latest News
             </h1>
-            <p className="text-xl md:text-2xl text-white/80 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-700 dark:text-white/80 max-w-4xl mx-auto leading-relaxed">
               Stay updated with our latest developments and industry insights
             </p>
           </motion.div>
         </div>
       </section>
 
-      <section className="py-24 bg-space-900">
+      <section className="py-24 bg-white dark:bg-space-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {newsArticles.map((article, index) => {
@@ -106,11 +106,11 @@ const News = () => {
                         </div>
                       </div>
                       
-                      <h3 className="text-lg font-semibold text-white mb-3 group-hover:text-primary-400 transition-colors">
+                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
                         {article.title}
                       </h3>
                       
-                      <p className="text-white/70 text-sm leading-relaxed mb-4">
+                      <p className="text-gray-700 dark:text-white/70 text-sm leading-relaxed mb-4">
                         {article.excerpt}
                       </p>
                       

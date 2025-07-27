@@ -96,7 +96,7 @@ const Technologies = () => {
       className="pt-16"
     >
       {/* Hero Section */}
-      <section className="py-24 bg-gradient-to-br from-space-800 to-space-700">
+      <section className="py-24 bg-gradient-to-br from-blue-50 via-indigo-100 to-purple-200 dark:bg-gradient-to-br dark:from-space-800 dark:to-space-700">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
@@ -104,10 +104,10 @@ const Technologies = () => {
             transition={{ duration: 0.8 }}
             className="text-center space-y-6"
           >
-            <h1 className="text-4xl md:text-6xl font-display font-bold text-white">
+            <h1 className="text-4xl md:text-6xl font-display font-bold text-gray-900 dark:text-white">
               Our Projects
             </h1>
-            <p className="text-xl md:text-2xl text-white/80 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-gray-700 dark:text-white/80 max-w-4xl mx-auto leading-relaxed">
               Explore our student-led space communications projects hosted on GitHub. 
               All projects are open source (except competition projects which are released after) and available for collaboration.
             </p>
@@ -116,7 +116,7 @@ const Technologies = () => {
       </section>
 
       {/* Projects Grid */}
-      <section className="py-24 bg-space-900">
+      <section className="py-24 bg-white dark:bg-space-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ y: 30, opacity: 0 }}
@@ -125,7 +125,7 @@ const Technologies = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-2xl md:text-3xl font-display font-bold text-white mb-4">
+            <h2 className="text-2xl md:text-3xl font-display font-bold text-gray-900 dark:text-white mb-4">
               Open Source Projects
             </h2>
             <p className="text-white/70 max-w-3xl mx-auto">
@@ -158,16 +158,16 @@ const Technologies = () => {
                     </div>
 
                     {/* Content */}
-                    <h3 className="text-xl font-semibold text-white mb-4">
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
                       {tech.title}
                     </h3>
-                    <p className="text-white/70 leading-relaxed mb-6">
+                    <p className="text-gray-700 dark:text-white/70 leading-relaxed mb-6">
                       {tech.description}
                     </p>
 
                     {/* Features */}
                     <div className="space-y-2 mb-6">
-                      <h4 className="text-sm font-medium text-white/90 mb-3">Key Features:</h4>
+                      <h4 className="text-sm font-medium text-gray-800 dark:text-white/90 mb-3">Key Features:</h4>
                       <ul className="space-y-2">
                         {tech.features.map((feature) => (
                           <li key={`${tech.title.toLowerCase().replace(/\s+/g, '-')}-${feature.toLowerCase().replace(/\s+/g, '-')}`} className="flex items-center text-sm text-white/70">

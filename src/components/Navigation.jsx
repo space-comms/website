@@ -74,7 +74,7 @@ const Navigation = () => {
                 className={`relative font-medium transition-colors duration-200 hover:text-primary-400 ${
                   location.pathname === item.path
                     ? 'text-primary-400'
-                    : 'text-white/80'
+                    : 'text-gray-700 dark:text-white/80'
                 }`}
               >
                 {item.name}
@@ -99,7 +99,7 @@ const Navigation = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   whileHover={{ scale: 1.1, rotate: 5 }}
-                  className="text-white/70 hover:text-primary-400 transition-colors duration-200"
+                  className="text-gray-500 dark:text-white/70 hover:text-primary-400 transition-colors duration-200"
                 >
                   <IconComponent className="w-5 h-5" />
                 </motion.a>
@@ -113,7 +113,7 @@ const Navigation = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-white/80 hover:text-white transition-colors"
+            className="md:hidden text-gray-700 dark:text-white/80 hover:text-primary-400 transition-colors"
           >
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </motion.button>
@@ -127,7 +127,7 @@ const Navigation = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden glass-effect border-t border-white/10"
+            className="md:hidden glass-effect border-t border-gray-200 dark:border-white/10"
           >
             <div className="px-4 py-6 space-y-4">
               {navItems.map((item, index) => (
@@ -143,7 +143,7 @@ const Navigation = () => {
                     className={`block font-medium transition-colors duration-200 hover:text-primary-400 ${
                       location.pathname === item.path
                         ? 'text-primary-400'
-                        : 'text-white/80'
+                        : 'text-gray-700 dark:text-white/80'
                     }`}
                   >
                     {item.name}
@@ -152,7 +152,7 @@ const Navigation = () => {
               ))}
               
               {/* Mobile Social Links & Theme Toggle */}
-              <div className="flex items-center justify-between pt-4 border-t border-white/10">
+              <div className="flex items-center justify-between pt-4 border-t border-gray-200 dark:border-white/10">
                 <div className="flex items-center space-x-4">
                   {socialLinks.map((social) => {
                     const IconComponent = social.icon;
@@ -163,7 +163,7 @@ const Navigation = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                         whileHover={{ scale: 1.1 }}
-                        className="text-white/70 hover:text-primary-400 transition-colors duration-200"
+                        className="text-gray-500 dark:text-white/70 hover:text-primary-400 transition-colors duration-200"
                       >
                         <IconComponent className="w-5 h-5" />
                       </motion.a>

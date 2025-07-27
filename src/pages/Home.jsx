@@ -47,13 +47,13 @@ const Home = () => {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 hero-overlay z-10" />
           {/* Placeholder for hero video/image */}
-          <div className="w-full h-full bg-gradient-to-br from-space-800 via-space-700 to-space-600 relative">
+          <div className="w-full h-full bg-gradient-to-br from-blue-50 via-indigo-100 to-purple-200 dark:bg-gradient-to-br dark:from-space-800 dark:via-space-700 dark:to-space-600 relative">
             {/* Animated particles and radio waves */}
             <div className="absolute inset-0 opacity-30">
               {[...Array(50)].map((_, i) => (
                 <motion.div
                   key={`particle-${i}`}
-                  className="absolute w-1 h-1 bg-white rounded-full"
+                  className="absolute w-1 h-1 bg-gray-400 dark:bg-white rounded-full"
                   initial={{
                     x: Math.random() * (typeof window !== 'undefined' ? window.innerWidth : 1920),
                     y: Math.random() * (typeof window !== 'undefined' ? window.innerHeight : 1080),
@@ -117,11 +117,11 @@ const Home = () => {
           >
             {/* Main Headline */}
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-display font-bold leading-tight">
-              <span className="bg-gradient-to-r from-white via-primary-300 to-primary-500 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-gray-800 via-primary-500 to-primary-700 dark:from-white dark:via-primary-300 dark:to-primary-500 bg-clip-text text-transparent">
                 Leeds University Space Communications
               </span>
               <br />
-              <span className="text-white">Special Interest Group</span>
+              <span className="text-gray-800 dark:text-white">Special Interest Group</span>
             </h1>
 
             {/* Subheading */}
@@ -129,7 +129,7 @@ const Home = () => {
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto leading-relaxed"
+              className="text-xl md:text-2xl text-gray-700 dark:text-white/80 max-w-3xl mx-auto leading-relaxed"
             >
               Building the future of satellite communications and RF technology through student-led CubeSat projects, 
               radio experiments, and hands-on learning. Join our community of satellite communications 
@@ -153,7 +153,7 @@ const Home = () => {
               
               <Link
                 to="/contact"
-                className="group border border-white/30 hover:border-primary-400 text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 backdrop-blur-sm"
+                className="group border border-gray-300 dark:border-white/30 hover:border-primary-400 text-gray-800 dark:text-white font-semibold px-8 py-4 rounded-lg transition-all duration-300 backdrop-blur-sm"
               >
                 <span>Join Our Society</span>
               </Link>
@@ -183,7 +183,7 @@ const Home = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-24 bg-space-800/50">
+      <section className="py-24 bg-gray-50 dark:bg-space-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
@@ -192,10 +192,10 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             className="text-center space-y-4 mb-16"
           >
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-white">
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-gray-900 dark:text-white">
               What We Do
             </h2>
-            <p className="text-xl text-white/70 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-white/70 max-w-3xl mx-auto">
               Hands-on learning through exciting satellite communication projects 
               and collaborative student initiatives
             </p>
@@ -270,10 +270,10 @@ const Home = () => {
                         </>
                       )}
                     </motion.div>
-                    <h3 className="text-xl font-semibold text-white mb-4">
+                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">
                       {feature.title}
                     </h3>
-                    <p className="text-white/70 leading-relaxed">
+                    <p className="text-gray-700 dark:text-white/70 leading-relaxed">
                       {feature.description}
                     </p>
                   </div>
@@ -285,7 +285,7 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-24 bg-gradient-to-br from-primary-900/20 to-space-800/50">
+      <section className="py-24 bg-gradient-to-br from-blue-100/50 to-indigo-200/50 dark:bg-gradient-to-br dark:from-primary-900/20 dark:to-space-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ y: 50, opacity: 0 }}
@@ -294,10 +294,10 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             className="text-center space-y-4 mb-16"
           >
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-white">
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-gray-900 dark:text-white">
               Growing Community
             </h2>
-            <p className="text-xl text-white/70 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-white/70 max-w-3xl mx-auto">
               Join our thriving society of radio and telecommunications enthusiasts at the University of Leeds
             </p>
           </motion.div>
@@ -343,7 +343,7 @@ const Home = () => {
                 >
                   {stat.value}
                 </motion.div>
-                <div className="text-white/70 font-medium">
+                <div className="text-gray-600 dark:text-white/70 font-medium">
                   {stat.label}
                 </div>
 
@@ -370,7 +370,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-space-800 relative overflow-hidden">
+      <section className="py-24 bg-gray-100 dark:bg-space-800 relative overflow-hidden">
         {/* Animated radio tower in background */}
         <div className="absolute top-1/2 right-10 transform -translate-y-1/2 opacity-10">
           <motion.div className="relative">
@@ -434,10 +434,10 @@ const Home = () => {
             transition={{ duration: 0.8 }}
             className="space-y-8"
           >
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-white">
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-gray-900 dark:text-white">
               Ready to Join Our Mission?
             </h2>
-            <p className="text-xl text-white/70 max-w-2xl mx-auto">
+            <p className="text-xl text-gray-600 dark:text-white/70 max-w-2xl mx-auto">
               Whether you&apos;re studying engineering, physics, computer science, or just 
               curious about radio and satellite technology, there&apos;s a place for you in our society.
             </p>

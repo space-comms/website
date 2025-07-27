@@ -63,7 +63,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="relative bg-space-900 border-t border-white/10">
+    <footer className="relative bg-gray-100 dark:bg-space-900 border-t border-gray-200 dark:border-white/10">
       {/* Main Footer Content */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
@@ -84,7 +84,7 @@ const Footer = () => {
               </div>
 
               {/* Mission Statement */}
-              <p className="text-white/70 text-sm leading-relaxed max-w-md">
+              <p className="text-gray-600 dark:text-white/70 text-sm leading-relaxed max-w-md">
                 Student-led satellite and space communications society at the University of Leeds. 
                 Building CubeSats, experimenting with radio communications, and inspiring the next 
                 generation of telecommunication enthusiasts through hands-on learning and collaboration.
@@ -95,7 +95,7 @@ const Footer = () => {
                 {contactInfo.map((item) => {
                   const IconComponent = item.icon;
                   const content = (
-                    <div className="flex items-center space-x-3 text-white/60 hover:text-primary-400 transition-colors duration-200">
+                    <div className="flex items-center space-x-3 text-gray-500 dark:text-white/60 hover:text-primary-400 transition-colors duration-200">
                       <IconComponent className="w-4 h-4" />
                       <span className="text-sm">{item.text}</span>
                     </div>
@@ -124,7 +124,7 @@ const Footer = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       whileHover={{ scale: 1.1, rotate: 5 }}
-                      className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center text-white/70 hover:text-primary-400 hover:bg-primary-500/20 transition-all duration-200"
+                      className="w-10 h-10 bg-gray-200 dark:bg-white/10 rounded-full flex items-center justify-center text-gray-600 dark:text-white/70 hover:text-primary-400 hover:bg-primary-500/20 transition-all duration-200"
                     >
                       <IconComponent className="w-5 h-5" />
                     </motion.a>
@@ -144,7 +144,7 @@ const Footer = () => {
               transition={{ delay: sectionIndex * 0.1 }}
               className="space-y-4"
             >
-              <h3 className="font-semibold text-white">{section.title}</h3>
+              <h3 className="font-semibold text-gray-900 dark:text-white">{section.title}</h3>
               <ul className="space-y-2">
                 {section.links.map((link) => (
                   <li key={link.name}>
@@ -153,7 +153,7 @@ const Footer = () => {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-white/60 hover:text-primary-400 transition-colors duration-200 text-sm flex items-center space-x-1"
+                        className="text-gray-600 dark:text-white/60 hover:text-primary-400 transition-colors duration-200 text-sm flex items-center space-x-1"
                       >
                         <span>{link.name}</span>
                         <ExternalLink className="w-3 h-3" />
@@ -161,7 +161,7 @@ const Footer = () => {
                     ) : (
                       <Link
                         to={link.path}
-                        className="text-white/60 hover:text-primary-400 transition-colors duration-200 text-sm"
+                        className="text-gray-600 dark:text-white/60 hover:text-primary-400 transition-colors duration-200 text-sm"
                       >
                         {link.name}
                       </Link>
@@ -175,14 +175,14 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-white/10 bg-space-800/50">
+      <div className="border-t border-gray-200 dark:border-white/10 bg-gray-50 dark:bg-space-800/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <div className="text-white/60 text-sm">
+            <div className="text-gray-600 dark:text-white/60 text-sm">
               © {currentYear} Leeds Space Comms — Student Satellite & Space Communications Group
             </div>
             
-            <div className="flex items-center space-x-6 text-sm text-white/60">
+            <div className="flex items-center space-x-6 text-sm text-gray-600 dark:text-white/60">
               <a 
                 href="https://github.com/space-comms" 
                 target="_blank" 

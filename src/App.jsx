@@ -16,6 +16,7 @@ import Technologies from './pages/Technologies';
 import Services from './pages/Services';
 import Media from './pages/Media';
 import News from './pages/News';
+import BlogPost from './pages/BlogPost';
 import Contact from './pages/Contact';
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/media" element={<Media />} />
             <Route path="/news" element={<News />} />
+            <Route path="/blog/:id" element={<BlogPost />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </AnimatePresence>

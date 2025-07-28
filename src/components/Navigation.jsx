@@ -3,12 +3,15 @@ import { Link, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Globe, Mail } from 'lucide-react';
 import logo from '../assets/logo.png';
+import lightLogo from '../assets/light_logo.png';
 import ThemeToggle from './ThemeToggle';
+import { useTheme } from '../hooks/useTheme';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
+  const { theme } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -58,7 +61,11 @@ const Navigation = () => {
             className="flex items-center space-x-2"
           >
             <Link to="/" className="flex items-center space-x-2">
-              <img src={logo} alt="Leeds Space Comms Logo" className="w-8 h-8" />
+              <img 
+                src={theme === 'light' ? lightLogo : logo} 
+                alt="Leeds Space Comms Logo" 
+                className="w-8 h-8" 
+              />
               <span className="font-display font-bold text-xl bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">
                 Leeds Space Comms
               </span>

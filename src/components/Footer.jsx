@@ -2,9 +2,12 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Globe, Mail, MapPin, ExternalLink } from 'lucide-react';
 import logo from '../assets/logo.png';
+import lightLogo from '../assets/light_logo.png';
+import { useTheme } from '../hooks/useTheme';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const { theme } = useTheme();
 
   const footerSections = [
     {
@@ -77,7 +80,11 @@ const Footer = () => {
             >
               {/* Logo */}
               <div className="flex items-center space-x-2">
-                <img src={logo} alt="Leeds Space Comms Logo" className="w-8 h-8" />
+                <img 
+                  src={theme === 'light' ? lightLogo : logo} 
+                  alt="Leeds Space Comms Logo" 
+                  className="w-8 h-8" 
+                />
                 <span className="font-display font-bold text-xl bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent">
                   Leeds Space Comms
                 </span>

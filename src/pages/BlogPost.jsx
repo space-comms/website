@@ -1,6 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { Calendar, ArrowLeft, Users, Clock, Share2 } from 'lucide-react';
+import usePageMetadata from '../hooks/usePageMetadata';
 
 // Import images
 import mainEmleyImg from '../assets/Emley-Moor Visit/main_emley.JPG';
@@ -195,6 +196,62 @@ const BlogPost = () => {
   };
 
   const post = blogPosts[id];
+
+  // Dynamic SEO and AI-friendly metadata based on the blog post
+  usePageMetadata(post ? {
+    title: post.title,
+    description: `${post.title} - ${post.content.replace(/<[^>]*>/g, '').substring(0, 160)}...`,
+    ogTitle: post.title,
+    ogDescription: post.content.replace(/<[^>]*>/g, '').substring(0, 200),
+    ogUrl: `https://leedsspacecomms.co.uk/blog/${id}`,
+    twitterTitle: post.title,
+    twitterDescription: post.content.replace(/<[^>]*>/g, '').substring(0, 140),
+    aiTags: [
+      post.category.toLowerCase().replace(' ', '-'),
+      'blog-post',
+      'leeds-space-comms',
+      ...(post.category === 'Field Trip' ? ['emley-moor', 'arqiva', 'field-trip'] : []),
+      ...(post.category === 'Research' ? ['ugrc', 'disaster-relief', 'mesh-networking'] : []),
+      ...(post.category === 'Community' ? ['amateur-radio', 'otley', 'antenna-design'] : []),
+      ...(post.category === 'Awards' ? ['rsgb', 'recognition', 'education'] : []),
+      ...(post.category === 'Launch' ? ['ground-station', 'deployment', 'satellite'] : [])
+    ],
+    structuredData: {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": post.title,
+      "description": post.content.replace(/<[^>]*>/g, '').substring(0, 200),
+      "author": {
+        "@type": "Organization",
+        "name": post.author
+      },
+      "publisher": {
+        "@type": "Organization", 
+        "name": "Leeds Space Communications Society",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://leedsspacecomms.co.uk/logo.png"
+        }
+      },
+      "datePublished": post.date,
+      "dateModified": post.date,
+      "articleSection": post.category,
+      "keywords": [post.category, "space communications", "student society", "University of Leeds"],
+      "url": `https://leedsspacecomms.co.uk/blog/${id}`,
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": `https://leedsspacecomms.co.uk/blog/${id}`
+      },
+      ...(post.images && post.images.length > 0 && {
+        "image": {
+          "@type": "ImageObject",
+          "url": `https://leedsspacecomms.co.uk${post.images[0]}`,
+          "width": 1200,
+          "height": 630
+        }
+      })
+    }
+  } : {});
 
   if (!post) {
     return (

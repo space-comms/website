@@ -1,0 +1,220 @@
+{
+  "organization": {
+    "name": "Leeds Space Communications Society",
+    "shortName": "Leeds Space Comms",
+    "type": "student-organization",
+    "institution": "University of Leeds",
+    "location": "West Yorkshire, United Kingdom",
+    "founded": "2024",
+    "website": "https://leedsspacecomms.co.uk",
+    "affiliations": [
+      {
+        "organization": "Radio Society of Great Britain",
+        "type": "education-affiliated-club",
+        "status": "active"
+      }
+    ]
+  },
+  "mission": {
+    "primary": "Advancing space communications technology through hands-on education",
+    "focus_areas": [
+      "satellite communications",
+      "CubeSat development", 
+      "ground station operations",
+      "amateur radio activities",
+      "educational outreach"
+    ]
+  },
+  "projects": {
+    "ground_station": {
+      "status": "operational",
+      "deployment_date": "2025-07-27",
+      "capabilities": [
+        "enhanced satellite tracking",
+        "precision communications",
+        "automated systems"
+      ],
+      "technology": [
+        "stepper motors",
+        "precision encoders",
+        "remote operation capability"
+      ]
+    },
+    "cubesat_development": {
+      "status": "ongoing",
+      "focus": "design, build, deploy nano-satellites",
+      "educational_value": "hands-on space systems engineering"
+    },
+    "research": {
+      "decentralized_communications": {
+        "researcher": "Ahmad Al-Musbahi",
+        "focus": "disaster relief communication networks",
+        "technology": "mesh networking",
+        "presentation": "UGRC 2025",
+        "applications": [
+          "emergency services",
+          "humanitarian aid",
+          "self-healing networks"
+        ]
+      }
+    }
+  },
+  "recent_activities": [
+    {
+      "date": "2025-07-27",
+      "event": "Ground Station Successfully Deployed",
+      "type": "project-launch",
+      "significance": "major milestone in satellite communications capability"
+    },
+    {
+      "date": "2025-06-18", 
+      "event": "Emley Moor Site Visit",
+      "type": "field-trip",
+      "partners": ["Arqiva"],
+      "guides": ["Craig Kelly", "Joanna Szymik"],
+      "focus": "professional RF engineering and broadcasting infrastructure"
+    },
+    {
+      "date": "2025-06-11",
+      "event": "UGRC Research Presentation",
+      "type": "academic-presentation",
+      "presenter": "Ahmad Al-Musbahi",
+      "topic": "Decentralised Communications for Disaster Relief"
+    },
+    {
+      "date": "2025-06-03",
+      "event": "Otley Amateur Radio Society Visit",
+      "type": "community-engagement",
+      "activity": "80m beam antenna design presentation"
+    },
+    {
+      "date": "2025-06-01",
+      "event": "RSGB Education-Affiliated Club Recognition",
+      "type": "recognition",
+      "significance": "official educational affiliation status"
+    }
+  ],
+  "technical_expertise": [
+    "satellite communications",
+    "CubeSat design",
+    "ground station operations",
+    "amateur radio",
+    "RF engineering",
+    "mesh networking",
+    "antenna design",
+    "space systems engineering",
+    "disaster communications",
+    "broadcasting systems"
+  ],
+  "educational_impact": {
+    "student_training": "hands-on experience with professional equipment",
+    "industry_preparation": "real-world skills development",
+    "knowledge_sharing": "regular workshops and presentations",
+    "outreach": "programs for local schools and community"
+  },
+  "partnerships": [
+    {
+      "name": "University of Leeds",
+      "type": "primary-affiliation"
+    },
+    {
+      "name": "Radio Society of Great Britain",
+      "type": "educational-affiliation"
+    },
+    {
+      "name": "Arqiva",
+      "type": "industry-partnership",
+      "activities": ["educational visits", "technical learning"]
+    }
+  ],
+  "content_structure": {
+    "pages": [
+      {
+        "path": "/",
+        "type": "homepage",
+        "content": "organization overview, mission, featured projects"
+      },
+      {
+        "path": "/about", 
+        "type": "about-page",
+        "content": "detailed organization information, values, team"
+      },
+      {
+        "path": "/technologies",
+        "type": "technical-overview",
+        "content": "space communication technologies, CubeSats, ground stations"
+      },
+      {
+        "path": "/services",
+        "type": "services-page", 
+        "content": "educational services, technical expertise offered"
+      },
+      {
+        "path": "/news",
+        "type": "news-listing",
+        "content": "latest updates, project announcements, activities"
+      },
+      {
+        "path": "/blog/*",
+        "type": "blog-posts",
+        "content": "detailed articles about projects, events, research"
+      },
+      {
+        "path": "/media",
+        "type": "gallery",
+        "content": "photo gallery from events, field trips, presentations"
+      },
+      {
+        "path": "/contact",
+        "type": "contact-page",
+        "content": "contact information and inquiry forms"
+      }
+    ],
+    "blog_posts": [
+      {
+        "id": 1,
+        "title": "New Ground Station Successfully Deployed",
+        "date": "2025-07-27",
+        "category": "Launch",
+        "keywords": ["ground station", "satellite communications", "deployment"]
+      },
+      {
+        "id": 2,
+        "title": "Exploring the Future of Broadcasting: Arqiva Site Visit at Emley Moor",
+        "date": "2025-06-18", 
+        "category": "Field Trip",
+        "keywords": ["Emley Moor", "Arqiva", "broadcasting", "field trip"]
+      },
+      {
+        "id": 3,
+        "title": "Breaking New Ground: Decentralised Communications for Disaster Relief",
+        "date": "2025-06-11",
+        "category": "Research", 
+        "keywords": ["disaster relief", "mesh networking", "UGRC", "research"]
+      },
+      {
+        "id": 4,
+        "title": "Sharing Knowledge: 80m Beam Antenna Design at Otley Amateur Radio Society",
+        "date": "2025-06-03",
+        "category": "Presentation",
+        "keywords": ["antenna design", "amateur radio", "Otley", "presentation"]
+      },
+      {
+        "id": 5,
+        "title": "RSGB Education-Affiliated Club Recognition",
+        "date": "2025-06-01",
+        "category": "Awards",
+        "keywords": ["RSGB", "recognition", "education", "affiliation"]
+      }
+    ]
+  },
+  "ai_optimization": {
+    "structured_data": "comprehensive JSON-LD markup",
+    "semantic_html": "proper HTML5 semantic elements",
+    "meta_tags": "detailed OpenGraph and Twitter Card metadata",
+    "sitemap": "XML sitemap with news markup",
+    "robots_txt": "crawler-friendly directives",
+    "content_markers": "AI-readable content type indicators",
+    "accessibility": "ARIA labels and semantic markup"
+  }
+}

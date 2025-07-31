@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Calendar, ArrowRight, Satellite, Award, Users, Radio, Presentation } from 'lucide-react';
+import usePageMetadata from '../hooks/usePageMetadata';
 
 // Import images
 import mainEmleyImg from '../assets/Emley-Moor Visit/main_emley.JPG';
@@ -12,6 +13,46 @@ import otleyImg1 from '../assets/Otley Visit June 2025/Media (8).jpg';
 import otleyImg2 from '../assets/Otley Visit June 2025/Media (9).jpg';
 
 const News = () => {
+  // SEO and AI-friendly metadata
+  usePageMetadata({
+    title: 'News & Updates',
+    description: 'Latest news and updates from Leeds Space Communications Society including ground station deployments, field trips to Emley Moor, research presentations, and RSGB recognition.',
+    ogTitle: 'Leeds Space Comms News & Updates',
+    ogDescription: 'Stay updated with our latest space communications projects, research, and society activities',
+    ogUrl: 'https://leedsspacecomms.co.uk/news',
+    twitterTitle: 'Leeds Space Comms News',
+    twitterDescription: 'Latest updates from our space communications society',
+    aiTags: ['news', 'updates', 'ground-station', 'emley-moor', 'arqiva', 'research', 'ugrc', 'rsgb', 'amateur-radio', 'field-trips'],
+    structuredData: {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Leeds Space Comms News",
+      "description": "News and updates from Leeds Space Communications Society",
+      "url": "https://leedsspacecomms.co.uk/news",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "News Articles",
+        "numberOfItems": 5,
+        "itemListElement": [
+          {
+            "@type": "Article",
+            "headline": "New Ground Station Successfully Deployed",
+            "datePublished": "2025-07-27",
+            "author": "Leeds Space Comms Team",
+            "url": "https://leedsspacecomms.co.uk/blog/1"
+          },
+          {
+            "@type": "Article", 
+            "headline": "Exploring the Future of Broadcasting: Arqiva Site Visit at Emley Moor",
+            "datePublished": "2025-06-18",
+            "author": "Leeds Space Comms Team",
+            "url": "https://leedsspacecomms.co.uk/blog/2"
+          }
+        ]
+      }
+    }
+  });
+
   const newsArticles = [
     {
       id: 1,

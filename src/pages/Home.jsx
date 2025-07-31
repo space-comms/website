@@ -1,8 +1,44 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Satellite, Radio, Globe, Zap } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import usePageMetadata from '../hooks/usePageMetadata';
 
 const Home = () => {
+  // SEO and AI-friendly metadata
+  usePageMetadata({
+    title: 'Home - Student Space Communications Society',
+    description: 'Leeds Space Comms is a student-led space communications society at the University of Leeds. We build CubeSats, design ground stations, and advance satellite communication technology through hands-on projects and education.',
+    ogTitle: 'Leeds Space Comms - Student Space Communications Society',
+    ogDescription: 'Student-led satellite and space communications society building the future of space technology',
+    ogUrl: 'https://leedsspacecomms.co.uk/',
+    twitterTitle: 'Leeds Space Comms - Student Space Communications Society',
+    twitterDescription: 'Building CubeSats, ground stations, and advancing space communications education',
+    aiTags: ['space-communications', 'cubesat', 'satellite', 'ground-station', 'student-society', 'university-leeds', 'rf-engineering', 'amateur-radio'],
+    structuredData: {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Leeds Space Communications Society Homepage",
+      "description": "Homepage of the student-led space communications society at University of Leeds",
+      "url": "https://leedsspacecomms.co.uk/",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Leeds Space Communications Society",
+        "description": "Student society focused on satellite communications, CubeSat development, and space technology education"
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://leedsspacecomms.co.uk/"
+          }
+        ]
+      }
+    }
+  });
+
   const features = [
     {
       icon: Satellite,

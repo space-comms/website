@@ -31,7 +31,8 @@ To foster student innovation in satellite and space communications through colla
 
 **Interested in joining?** We welcome students from all backgrounds and experience levels:
 
-- **Weekly Meetings** — Thursdays at 6 PM in the Engineering Building
+- **Weekly CubeSat Meetings** — Wednesdays at 7 PM in the Engineering Building
+- **Whole Team Meetings** - As required, stay posted!
 - **Project Teams** — Join ongoing satellite and radio communication projects
 - **Workshops** — Learn soldering, programming, and RF design
 - **Competitions** — Participate in national and international space challenges

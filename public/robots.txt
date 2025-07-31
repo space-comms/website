@@ -1,4 +1,27 @@
 User-agent: *
 Allow: /
 
+# Main content pages for AI agents and crawlers
+Allow: /about
+Allow: /technologies  
+Allow: /services
+Allow: /news
+Allow: /media
+Allow: /contact
+Allow: /blog/*
+
+# Static assets
+Allow: /assets/*
+Allow: /*.css
+Allow: /*.js
+Allow: /*.png
+Allow: /*.jpg
+Allow: /*.jpeg
+Allow: /*.svg
+Allow: /*.ico
+
+# Sitemap for AI crawlers and search engines
 Sitemap: https://leedsspacecomms.co.uk/sitemap.xml
+
+# Crawl delay for respectful access
+Crawl-delay: 1

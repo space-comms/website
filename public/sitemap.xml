@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Main Pages -->
+  <url>
+    <loc>https://leedsspacecomms.co.uk/</loc>
+    <lastmod>2025-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://leedsspacecomms.co.uk/about</loc>
+    <lastmod>2025-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://leedsspacecomms.co.uk/technologies</loc>
+    <lastmod>2025-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://leedsspacecomms.co.uk/services</loc>
+    <lastmod>2025-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://leedsspacecomms.co.uk/news</loc>
+    <lastmod>2025-07-31</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://leedsspacecomms.co.uk/media</loc>
+    <lastmod>2025-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://leedsspacecomms.co.uk/contact</loc>
+    <lastmod>2025-07-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://leedsspacecomms.co.uk/blog/1</loc>
+    <lastmod>2025-07-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Leeds Space Comms</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-07-27</news:publication_date>
+      <news:title>New Ground Station Successfully Deployed</news:title>
+      <news:keywords>ground station, satellite communications, space technology</news:keywords>
+    </news:news>
+  </url>
+  
+  <url>
+    <loc>https://leedsspacecomms.co.uk/blog/2</loc>
+    <lastmod>2025-06-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Leeds Space Comms</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-06-18</news:publication_date>
+      <news:title>Exploring the Future of Broadcasting: Arqiva Site Visit at Emley Moor</news:title>
+      <news:keywords>Emley Moor, broadcasting, field trip, Arqiva, transmitter</news:keywords>
+    </news:news>
+  </url>
+  
+  <url>
+    <loc>https://leedsspacecomms.co.uk/blog/3</loc>
+    <lastmod>2025-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Leeds Space Comms</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-06-11</news:publication_date>
+      <news:title>Breaking New Ground: Decentralised Communications for Disaster Relief</news:title>
+      <news:keywords>disaster relief, mesh networking, research, UGRC</news:keywords>
+    </news:news>
+  </url>
+  
+  <url>
+    <loc>https://leedsspacecomms.co.uk/blog/4</loc>
+    <lastmod>2025-06-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Leeds Space Comms</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-06-03</news:publication_date>
+      <news:title>Sharing Knowledge: 80m Beam Antenna Design at Otley Amateur Radio Society</news:title>
+      <news:keywords>antenna design, amateur radio, Otley, presentation</news:keywords>
+    </news:news>
+  </url>
+  
+  <url>
+    <loc>https://leedsspacecomms.co.uk/blog/5</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <news:news>
+      <news:publication>
+        <news:name>Leeds Space Comms</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2025-06-01</news:publication_date>
+      <news:title>RSGB Education-Affiliated Club Recognition</news:title>
+      <news:keywords>RSGB, recognition, education, amateur radio</news:keywords>
+    </news:news>
+  </url>
+
+</urlset>

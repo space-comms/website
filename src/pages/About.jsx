@@ -1,7 +1,36 @@
 import { motion } from 'framer-motion';
 import { Users, Target, Award, Rocket, Lightbulb, Globe } from 'lucide-react';
+import usePageMetadata from '../hooks/usePageMetadata';
 
 const About = () => {
+  // SEO and AI-friendly metadata
+  usePageMetadata({
+    title: 'About Us - Student Space Communications Society',
+    description: 'Learn about Leeds Space Communications Society - a student-led organization at the University of Leeds dedicated to advancing space communications technology through hands-on projects, CubeSat development, and educational outreach.',
+    ogTitle: 'About Leeds Space Communications Society',
+    ogDescription: 'Student-led space technology society building CubeSats, ground stations, and advancing space communications education',
+    ogUrl: 'https://leedsspacecomms.co.uk/about',
+    twitterTitle: 'About Leeds Space Comms',
+    twitterDescription: 'Student society advancing space communications through practical projects and education',
+    aiTags: ['about', 'student-society', 'space-communications', 'cubesat-development', 'university-leeds', 'education', 'rsgb-affiliated', 'ground-stations'],
+    structuredData: {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "name": "About Leeds Space Communications Society",
+      "description": "Information about our student society, mission, values, and team",
+      "url": "https://leedsspacecomms.co.uk/about",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "Leeds Space Communications Society",
+        "foundingDate": "2024",
+        "description": "Student-led space communications society at the University of Leeds",
+        "memberOf": "Radio Society of Great Britain",
+        "areaServed": "University of Leeds, West Yorkshire, UK",
+        "knowsAbout": ["CubeSat Development", "Ground Station Operations", "Amateur Radio", "Space Communications", "RF Engineering"]
+      }
+    }
+  });
+
   const values = [
     {
       icon: Lightbulb,

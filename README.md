@@ -38,7 +38,7 @@ To foster student innovation in satellite and space communications through colla
 - **Competitions** — Participate in national and international space challenges
 - **Social Events** — Connect with like-minded space enthusiasts
 
-**Contact us:** [leedsspacecomms@leeds.ac.uk](mailto:info@leedsspacecomms.co.uk)  
+**Contact us:** [info@leedsspacecomms.co.uk](mailto:info@leedsspacecomms.co.uk)  
 **Follow us:** [@leedsspacecomms](https://instagram.com/leedsspacecomms) on Instagram and LinkedIn
 
 ## 🚀 Fixed Issues & Status
@@ -325,7 +325,7 @@ npm run preview
 **Leeds Space Comms Society**  
 University of Leeds, Leeds, UK
 
-- **Email:** [info@leedsspacecomms.com](mailto:leedsspacecomms@leeds.ac.uk)
+- **Email:** [info@leedsspacecomms.co.uk](mailto:info@leedsspacecomms.co.uk)
 - **Instagram:** [@leedsspacecomms](https://instagram.com/leedsspacecomms)
 - **LinkedIn:** [@leedsspacecomms](https://linkedin.com/company/leedsspacecomms)
 - **GitHub:** [github.com/space-comms](https://github.com/space-comms)

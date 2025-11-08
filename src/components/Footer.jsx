@@ -208,7 +208,7 @@ const Footer = () => {
                 University of Leeds
               </a>
               <a 
-                href="mailto:leedsspacecomms@leeds.ac.uk"
+                href="mailto:info@leedsspacecomms.co.uk"
                 className="hover:text-primary-400 transition-colors"
               >
                 Contact
